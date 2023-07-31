@@ -64,8 +64,30 @@ $ make
 $ sudo make install
 
 ```
-After installing it will look like this:
+Image after installation:
+![ngspice](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/22a4dab7-b6dc-4d07-b2a8-8f2d24b06568)
+</details>
 
+<details>
+<summary>magic</summary>
+
+```
+$   sudo apt-get install m4
+$   sudo apt-get install tcsh
+$   sudo apt-get install csh
+$   sudo apt-get install libx11-dev
+$   sudo apt-get install tcl-dev tk-dev
+$   sudo apt-get install libcairo2-dev
+$   sudo apt-get install mesa-common-dev libglu1-mesa-dev
+$   sudo apt-get install libncurses-dev
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+./configure
+make
+make install
+
+```
+Image after installation:
 </details>
 
 
