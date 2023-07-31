@@ -17,9 +17,17 @@ $ sudo make install
 ```
 ![yosys](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/345a1e66-96c9-4baa-b543-4c54a83c7f80)
 
-## Iverilog
+## Icarus verilog
 ```
 Steps to install iverilog
 sudo apt-get install iverilog
+```
+![iverilog](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/bb03caee-57ee-4d01-bd57-25e85e0f302f)
+
+## GTKWave
+```
+Steps to install gtkwave
+sudo apt update
+sudo apt install gtkwave
 ```
 
