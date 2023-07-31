@@ -15,6 +15,11 @@ $ make config-gcc
 $ make 
 $ sudo make install
 ```
+![yosys](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/345a1e66-96c9-4baa-b543-4c54a83c7f80)
 
-
+## Iverilog
+```
+Steps to install iverilog
+sudo apt-get install iverilog
+```
 
