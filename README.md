@@ -30,4 +30,5 @@ Steps to install gtkwave
 sudo apt update
 sudo apt install gtkwave
 ```
+![gtkwave](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/61dea6a3-487c-4308-a8c4-f1d4477c992a)
 
