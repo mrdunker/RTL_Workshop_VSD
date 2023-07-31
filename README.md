@@ -88,6 +88,11 @@ make install
 
 ```
 Image after installation:
+![magic](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/79c38c91-a0be-4b4b-a334-bb1ef3754af8)
+</details>
+
+<details>
+<summary></summary>
 </details>
 
 
