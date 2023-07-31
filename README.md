@@ -18,6 +18,7 @@ $ make config-gcc<br />
 $ make <br />
 $ sudo make install<br />
 ```
+Image after Installation
 ![yosys](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/345a1e66-96c9-4baa-b543-4c54a83c7f80)
 </details>
 <details>
@@ -27,6 +28,7 @@ $ sudo make install<br />
 Steps to install iverilog
 sudo apt-get install iverilog
 ```
+Image after Installation
 ![iverilog](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/bb03caee-57ee-4d01-bd57-25e85e0f302f)
 </details>
 <details>
@@ -36,7 +38,8 @@ sudo apt-get install iverilog
 Steps to install gtkwave
 sudo apt update
 sudo apt install gtkwave
-```    
+```
+Image after Installation
 ![gtkwave](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/61dea6a3-487c-4308-a8c4-f1d4477c992a)
 </details>
 
@@ -46,9 +49,9 @@ sudo apt install gtkwave
 ```
 Went to the github repo: https://github.com/The-OpenROAD-Project/OpenSTA
 and did the processes mentioned
-
-
 ```
+Image after installation:
+![opensta png](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/bcc4cf94-2696-4f19-bfcd-20a48424276f)
 </details>
 <details>
 <summary>ngspice</summary>   
@@ -92,7 +95,34 @@ Image after installation:
 </details>
 
 <details>
-<summary></summary>
+<summary>OpenLane</summary>
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install -y build-essential python3 python3-venv python3-pip make git
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt update
+
+sudo apt install docker-ce docker-ce-cli containerd.io
+
+sudo docker run hello-world
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo reboot 
+
+# After reboot
+docker run hello-world
+
+```
+Image after installation:
+
 </details>
 
 
