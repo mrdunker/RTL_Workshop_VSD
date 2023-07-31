@@ -122,7 +122,7 @@ docker run hello-world
 
 ```
 Image after installation:
-
+![docker](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ee51e4a0-bb4e-4e41-8ff6-e4cf30dcfcb7)
 </details>
 
 
