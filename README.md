@@ -2,10 +2,21 @@
 This github repository summarises the class work done on Physical Design for ASIC's (VL508)
 
 # Day 0
-Following are the steps for installation:
+Following are the steps for installation of nessasary tools:
 <details>
 <summary> Yosys</summary>
+<br />
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Selected features and typical applications:
 
+- Process almost any synthesizable Verilog-2005 design
+- Converting Verilog to BLIF / EDIF/ BTOR / SMT-LIB / simple RTL Verilog / etc.
+- Built-in formal methods for checking properties and equivalence
+- Mapping to ASIC standard cell libraries (in Liberty File Format)
+- Mapping to Xilinx 7-Series and Lattice iCE40 and ECP5 FPGAs
+- Foundation and/or front-end for custom flows<br />
+
+Steps to install Yosys:
+  
 ```
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys-master 
@@ -23,9 +34,12 @@ Image after Installation:
 </details>
 <details>
 <summary> Icarus verilog</summary>
-
+<br />    
+Icarus Verilog is an implementation of the Verilog hardware description language compiler that generates netlists in the desired format (EDIF). It supports the 1995, 2001 and 2005 versions of the standard, portions of SystemVerilog, and some extensions.<br />
+Icarus Verilog is available for Linux, FreeBSD, OpenSolaris, AIX, Microsoft Windows, and Mac OS X. Released under the GNU General Public License, Icarus Verilog is free software.<br /><br />
+Step to install iverilog: 
+    
 ```
-Step to install iverilog:
 sudo apt-get install iverilog
 ```
 Image after Installation:
@@ -33,9 +47,12 @@ Image after Installation:
 </details>
 <details>
 <summary> GTKWave </summary>
+<br />
+GTKWave is a VCD waveform viewer based on the GTK library. This viewer support VCD and LXT formats for signal dumps.<br />
+Waveform dumps are written by the Icarus Verilog runtime program vvp. The user uses $dumpfile and $dumpvars system tasks to enable waveform dumping, then the vvp runtime takes care of the rest. The output is written into the file specified by the $dumpfile system task. If the $dumpfile call is absent, the compiler will choose the file name dump.vcd or dump.lxt, depending on runtime flags.The example below dumps everything in and below the test module.<br /><br />
+Steps to install GTKWave:
 
 ```
-Steps to install gtkwave
 sudo apt update
 sudo apt install gtkwave
 ```
@@ -45,16 +62,31 @@ Image after Installation:
 
 <details>
 <summary>OpenSTA</summary>
+<br />
+OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats.
 
+- Verilog netlist
+- Liberty library
+- SDC timing constraints
+- SDF delay annotation
+- SPEF parasitics
+
+OpenSTA uses a TCL command interpreter to read the design, specify timing constraints and print timing reports.<br /><br />
+Steps to install OpenSTA:
 ```
 Went to the github repo: https://github.com/The-OpenROAD-Project/OpenSTA
-and did the process mentioned
+and did the process mentioned within (intsalled the prerequisites and installed OpenSTA with Cmake).
 ```
 Image after installation:
 ![opensta png](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/bcc4cf94-2696-4f19-bfcd-20a48424276f)
 </details>
 <details>
-<summary>ngspice</summary>   
+<summary>Ngspice</summary>   
+<br />
+Ngspice is an open-source electronic circuit simulator software that allows engineers, researchers, and hobbyists to simulate and analyze electronic circuits. It is a part of the Spice (Simulation Program with Integrated Circuit Emphasis) family of circuit simulation tools, which have been widely used since the 1970s.
+
+Ngspice is an evolution of the well-known Spice3 program, incorporating additional features and improvements. It is compatible with various operating systems, including Windows, Linux, and macOS. The software is primarily used for simulating analog, digital, and mixed-signal circuits.<br /><br />
+Steps to install Ngspice:
 
 ```
 After downloading the tarball from https://sourceforge.net/projects/ngspice/files/ to a local directory, unpack it using:
@@ -73,6 +105,10 @@ Image after installation:
 
 <details>
 <summary>magic</summary>
+<br />
+Magic is a popular open-source tool used for ASIC (Application-Specific Integrated Circuit) design and layout. It is part of the Electric VLSI Design System and provides capabilities for creating and editing integrated circuit layouts. Magic is widely used in the semiconductor industry and academic settings for various ASIC design tasks.
+
+<br /> Steps to install magic:
 
 ```
 $   sudo apt-get install m4
@@ -96,7 +132,21 @@ Image after installation:
 
 <details>
 <summary>OpenLANE</summary>
+<br />
+OpenLANE is an open-source ASIC (Application-Specific Integrated Circuit) design flow and methodology that aims to automate and standardize the process of designing and fabricating custom digital integrated circuits. It is developed and maintained by the OpenROAD (Open Research for Advanced Nanotechnologies) project, which is a collaboration of various academic and industrial organizations.
 
+Key components and features of OpenLANE include:<br />
+- RTL Synthesis: The flow starts with RTL synthesis, where the RTL code is converted into a gate-level representation using synthesis tools.
+- Floorplanning: OpenLANE performs automatic floorplanning, which involves arranging the logical blocks and components on the chip's physical layout.
+- Placement: It automatically places the gates and cells on the chip, optimizing for area, power, and performance.
+- Clock Tree Synthesis (CTS): OpenLANE generates a clock tree to efficiently distribute the clock signal across the chip.
+- Routing: The tool performs automatic routing to connect all the elements on the chip while adhering to design rules and constraints.
+- Static Timing Analysis (STA): OpenLANE performs static timing analysis to verify that the design meets the required timing specifications.
+- Design Rule Check (DRC) and Layout versus Schematic (LVS) verification: OpenLANE checks the physical layout against manufacturing rules (DRC) and compares the layout to the original schematic (LVS) to ensure consistency.
+- Configuration and customization: OpenLANE allows users to configure various aspects of the design flow and customize different steps based on specific design requirements.
+<br />
+Steps to install OpenLANE:
+    
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -125,7 +175,25 @@ Image after installation:
 ![docker](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ee51e4a0-bb4e-4e41-8ff6-e4cf30dcfcb7)
 </details>
 
+# Day 1
 
+<details>
+    <summary>Verilog codes</summary>
+</details>
 
+<details>
+    <summary>Simulation: iverilog and GTKwave</summary>
+</details> 
+<details>
+    <summary>Synthesis: Yosys</summary>
+</details>
 
+# References
+1. https://yosyshq.net/yosys/
+2. https://en.wikipedia.org/wiki/Icarus_Verilog
+3. https://iverilog.fandom.com/wiki/GTKWave
+4. http://ngspice.sourceforge.net/
+5. https://github.com/The-OpenROAD-Project/OpenSTA
+6. http://opencircuitdesign.com/magic/
+7. https://github.com/The-OpenROAD-Project/OpenLane
 
