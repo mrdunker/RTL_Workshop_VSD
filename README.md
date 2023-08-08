@@ -234,6 +234,30 @@ Below is the GTKwave output for the same:<br />
 </details>
 <details>
     <summary>Other Relevent data</summary>
+  <br />
+  
+  **RTL Design:** <br />
+RTL stands for "Register Transfer Level," and in the context of digital hardware design, RTL design refers to the process of describing the behavior of a digital circuit 
+or system using a hardware description language (HDL) at the register transfer level. It's a crucial step in designing complex digital systems such as microprocessors, 
+application-specific integrated circuits (ASICs), field-programmable gate arrays (FPGAs), and more.
+<br /><br />
+In RTL design, the designer specifies the functionality and behavior of the digital system using a high-level hardware description language like Verilog or VHDL. This description focuses on the flow of data between registers and the operations that take place on that data.<br />
+
+**Synthesis:** <br />
+RTL design is the process of transforming a high-level functional description of a digital system into a gate-level netlist that can be physically implemented on 
+hardware platforms. This process involves mapping the logic to standard cells, optimizing for performance, and ensuring timing requirements are met.
+A Design is converted into gates and the connections are made between those gates,the final output file is what is termed as a netlist.<br /><br />
+
+### What is .lib ?
+
+1. .lib is a collection of various logical modules
+2. It includes basic gates like and ,or etc..
+3. There are different flavours(versions) of the same gate
+    - Slow
+    - Medium
+    - Fast
+
+We need different flavours of gates because combinational delays in logical path will determine the maximum speed of operation of digital logic circuits.<br />
 </details>
 
 # References
