@@ -197,11 +197,17 @@ Image after installation:
  done. <br /><br />
 **A basic synthesis flow is as shown below:** <br />
  ![synthesis flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/abcd8a60-8222-433e-a53e-ff1485ecd810)
- <br />( .lib is explained in Miscellaneous section)<br />
+ <br />( .lib is explained in the 'Other Relevent Data' section)<br />
  <br />The set of primary inputs or primary outputs will remain same in both RTL design and netlist,i.e. The testbench used for simulation and verification is same.<br />
 </details>
 <details>
     <summary>Verilog codes</summary>
+  We are simulating a simple 2x1 mux using iverilog and GTKwave, the codes have been taken from the github repo:<br />
+  https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+  <br /><br />
+  The above git has been cloned and saved in local system as shown below.<br />
+  
+  
 </details>
 
 <details>
@@ -211,7 +217,7 @@ Image after installation:
     <summary>Synthesis: Yosys</summary>
 </details>
 <details>
-    <summary>Miscellaneous</summary>
+    <summary>Other Relevent data</summary>
 </details>
 
 # References
