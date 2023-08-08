@@ -222,7 +222,8 @@ iverilog good_mux.v tb_good_mux.v
 ./a.out
 gtkwave tb_good_mux.vcd
 ```
-    
+![iverilog_gtk](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/69775736-ff34-4c3c-8231-87dd9f111e2b)
+<br />
 </details> 
 <details>
     <summary>Synthesis: Yosys</summary>
