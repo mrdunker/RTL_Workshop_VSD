@@ -176,7 +176,23 @@ Image after installation:
 </details>
 
 # Day 1
+<details>
+  <summary>Introduction</summary>
+  <br />
+  This section mainly focuses on Iverilog,GTKwave and Yosys.The simulation and synthesis of a basic 2x1 mux is also done.<br /><br />
+ A simulator refers to a software tool or program that simulates the behavior of the digital design described at the RTL level. It allows designers to test and verify 
+ the functionality of their digital designs before actual hardware is fabricated. Simulators take the RTL description and execute it in a software 
+ environment, allowing the designer to observe how the design behaves under different conditions and inputs.The simulator looks for changes in the input.Upon change inn 
+ the input the output is evaluated.If no change in input is observed ,there will be no change in output.<br />
+ Icarus Verilog is an open-source RTL simulator that supports Verilog. It's widely used in academia and smaller projects due to its free and open nature.<br /><br/>
+ A test bench is a set of simulation code and associated data that is used to verify the correctness and functionality of a digital design described at the Register 
+ Transfer Level (RTL) or other abstraction levels. It serves as a virtual environment in which the design can be tested before it's physically implemented in 
+ hardware.The design may have  more than one inputs and outputs ,while the Test bench does'nt a primary input or a primary output.<br />
 
+ The Iverilog based simulation flow is that of below :<br />
+  
+  
+</details>
 <details>
     <summary>Verilog codes</summary>
 </details>
