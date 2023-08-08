@@ -222,8 +222,12 @@ iverilog good_mux.v tb_good_mux.v
 ./a.out
 gtkwave tb_good_mux.vcd
 ```
+Below are the Shell commands screen shot for the execution of both .v files (design and test bench):<br />
 ![iverilog_gtk](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/69775736-ff34-4c3c-8231-87dd9f111e2b)
 <br />
+<br />
+Below is the GTKwave output for the same:<br />
+![gtk](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/af652fdb-1222-484f-820c-51f3d4de732f)
 </details> 
 <details>
     <summary>Synthesis: Yosys</summary>
