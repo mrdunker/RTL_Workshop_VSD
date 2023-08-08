@@ -183,14 +183,18 @@ Image after installation:
  A simulator refers to a software tool or program that simulates the behavior of the digital design described at the RTL level. It allows designers to test and verify 
  the functionality of their digital designs before actual hardware is fabricated. Simulators take the RTL description and execute it in a software 
  environment, allowing the designer to observe how the design behaves under different conditions and inputs.The simulator looks for changes in the input.Upon change inn 
- the input the output is evaluated.If no change in input is observed ,there will be no change in output.<br />
+ the input the output is evaluated.If no change in input is observed ,there will be no change in output. 
  Icarus Verilog is an open-source RTL simulator that supports Verilog. It's widely used in academia and smaller projects due to its free and open nature.<br /><br/>
  A test bench is a set of simulation code and associated data that is used to verify the correctness and functionality of a digital design described at the Register 
  Transfer Level (RTL) or other abstraction levels. It serves as a virtual environment in which the design can be tested before it's physically implemented in 
- hardware.The design may have  more than one inputs and outputs ,while the Test bench does'nt a primary input or a primary output.<br />
+ hardware.The design may have  more than one inputs and outputs ,while the Test bench does'nt a primary input or a primary output.<br /><br />
 
  The Iverilog based simulation flow is that of below :<br />
-  
+ ![simulation flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/3d965540-bb96-4bb3-9284-b446b57621fb)
+
+ After Simulation Synthesis is required.For this we are using a tool called Yosys,which will gives us a netlist,which is a representation of the design in standard 
+ cells.There are certain commands like read_verilog , read_liberty and write_verilog used for the synthesis process.<br />
+ A basic synthesis flow is as shown below:<br />
   
 </details>
 <details>
