@@ -197,7 +197,7 @@ Image after installation:
  done. <br /><br />
 **A basic synthesis flow is as shown below:** <br />
  ![synthesis flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/abcd8a60-8222-433e-a53e-ff1485ecd810)
- <br />( .lib is explained in Misc. section)<br />
+ <br />( .lib is explained in Miscellaneous section)<br />
  <br />The set of primary inputs or primary outputs will remain same in both RTL design and netlist,i.e. The testbench used for simulation and verification is same.<br />
 </details>
 <details>
@@ -210,6 +210,9 @@ Image after installation:
 <details>
     <summary>Synthesis: Yosys</summary>
 </details>
+<details>
+    <summary>Miscellaneous</summary>
+</details>
 
 # References
 1. https://yosyshq.net/yosys/
@@ -219,4 +222,5 @@ Image after installation:
 5. https://github.com/The-OpenROAD-Project/OpenSTA
 6. http://opencircuitdesign.com/magic/
 7. https://github.com/The-OpenROAD-Project/OpenLane
+8. https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
 
