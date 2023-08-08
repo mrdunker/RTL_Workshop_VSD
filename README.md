@@ -207,11 +207,22 @@ Image after installation:
   <br /><br />
   The above git has been cloned and saved in local system as shown below.<br />
   
+  ![git_clone](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/05e19c55-237f-47b0-b2df-4a4839a12e2c)
   
 </details>
 
 <details>
     <summary>Simulation: iverilog and GTKwave</summary>
+  <br />
+  The below linux shell commands are typed into the terminal to get exceute the mux design file and the test bench.A vcd(value change dump) file is generated
+  and that is opend using GTKwave as shown below. 
+  
+```
+iverilog good_mux.v tb_good_mux.v
+./a.out
+gtkwave tb_good_mux.vcd
+```
+    
 </details> 
 <details>
     <summary>Synthesis: Yosys</summary>
