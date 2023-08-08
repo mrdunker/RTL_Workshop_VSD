@@ -189,13 +189,16 @@ Image after installation:
  Transfer Level (RTL) or other abstraction levels. It serves as a virtual environment in which the design can be tested before it's physically implemented in 
  hardware.The design may have  more than one inputs and outputs ,while the Test bench does'nt a primary input or a primary output.<br /><br />
 
- The Iverilog based simulation flow is that of below :<br />
+ **The Iverilog based simulation flow is that of below :** <br />
  ![simulation flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/3d965540-bb96-4bb3-9284-b446b57621fb)
 
  After Simulation Synthesis is required.For this we are using a tool called Yosys,which will gives us a netlist,which is a representation of the design in standard 
- cells.There are certain commands like read_verilog , read_liberty and write_verilog used for the synthesis process.<br />
- A basic synthesis flow is as shown below:<br />
-  
+ cells.There are certain commands like read_verilog , read_liberty and write_verilog used for the synthesis process.After Synthesis verification of the netlist is also 
+ done. <br /><br />
+**A basic synthesis flow is as shown below:** <br />
+ ![synthesis flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/abcd8a60-8222-433e-a53e-ff1485ecd810)
+ <br />( .lib is explained in Misc. section)<br />
+ <br />The set of primary inputs or primary outputs will remain same in both RTL design and netlist,i.e. The testbench used for simulation and verification is same.<br />
 </details>
 <details>
     <summary>Verilog codes</summary>
