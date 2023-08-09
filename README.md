@@ -231,6 +231,47 @@ Below is the GTKwave output for the same:<br />
 </details> 
 <details>
     <summary>Synthesis: Yosys</summary>
+<br />
+Here we are Synthesizing a basic 2x1 mux which we have simulated in iverilog and GTKwave as shown in the above sections.<br />
+In the directory, we need to input shell terminal command yosys for synthesis below shown are the commmands used:
+  
+  ```
+yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+yosys> read_verilog good_mux.v
+yosys> synth -top good_mux
+yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+yosys> show
+  ```
+To generate the netlist and view the 'netlist.v' file following commands are used:
+
+ ```
+yosys> write_verilog -noattr good_mux_netlist.v
+yosys> !gvim good_mux_netlist.v
+  ```
+
+<br /> **The Screenshot below shows how commands read_liberty and read_verilog are done:** <br />
+![synth1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ef674f5e-94f0-4310-bd4a-dd87ab9c6a24)
+<br />
+
+**The Screenshot below is of the syth -top <name.v> command:** <br />
+![synth2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/35ee2316-6785-4509-a254-1d9e7607336f)
+<br />
+
+**The Screenshot below shows how command abc -liberty is done:** <br />
+![synth3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/2f53dd5c-b782-4f0b-8185-c334c9d3f13a)
+<br />
+
+**The Screenshot below shows how the show command is done:** <br />
+![synth4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/f944ec4b-904a-45c4-8f3a-833a0753d9cb)
+<br />
+
+**The Figure below is the generated synthesized design:** <br />
+![synth5_img](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/e036f7ba-aa4c-46ba-bfec-f26cdb14a426)
+<br />
+
+**The Screenshot below shows the 'write_verilog -noattr<'name of netlist'>' command and the <netlist>.v file:** <br />
+![synth6_final](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/c0691b18-bae6-46ac-bd23-f03e20d01d6b)
+  
 </details>
 <details>
     <summary>Other Relevent data</summary>
