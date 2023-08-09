@@ -299,6 +299,16 @@ A Design is converted into gates and the connections are made between those gate
     - Fast
 
 We need different flavours of gates because combinational delays in logical path will determine the maximum speed of operation of digital logic circuits.<br />
+<br />
+### Why do we need different flavours of gates?
+
+1.Different flavors of gates are necessary to provide a diverse toolkit for designing and implementing electronic circuits. They cater to various logical functions, 
+  optimization requirements, noise considerations, and implementation constraints, enabling the creation of complex and efficient systems.
+2.Combinational delays in logic path determine the max speed of operation of a digital logic circuit.
+<br />
+
+
+
 </details>
 
 # References
