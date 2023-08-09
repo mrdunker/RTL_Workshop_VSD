@@ -306,6 +306,26 @@ We need different flavours of gates because combinational delays in logical path
   optimization requirements, noise considerations, and implementation constraints, enabling the creation of complex and efficient systems.
 2. Combinational delays in logic path determine the max speed of operation of a digital logic circuit.
 
+<br />
+
+![dff_combi](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/01b72e99-69f9-4453-9e17-8f2a082de217)
+
+- Based on the figure shown above,Tclk **Tcq_a** ,**Tcombi**,**Tsetup_b** are the time period of clock,preopagation delay of A,Combinational delay,setup time of B 
+  respectively.
+- **Tclk > Tcq_a + Tcombi + Tsetup_b**
+- one clock pulse should be long enough for the delay of the 'A'-D.FF,combinational delay and setup time for 'B'-D.FF to be incorporated.
+- **Tsetup_b** is the time required for the the 'B'-D.FF data to be stable.
+
+There is also a need for slow cells.The question of why we need them arises.<br />
+- To ensure there is no 'HOLD' issues at B-D.FF, we need certain cells to work slowly
+- We need cells that work fast to meet the required performance and we need the cells that work slow to meet HOLD.
+
+## Faster Cells Vs. Slower Cells:
+- A load in a digital logic is a capacitor
+- A faster charging or discharging means less delay
+- To increase the rate of charging or discharging we need to widen the transistors.
+- Wider transistor give lower delay : but more is requied and more power is required
+- Narrow tranistors give out more delay  : we need less area and less power is consumed.
 
 
 </details>
