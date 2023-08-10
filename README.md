@@ -330,6 +330,11 @@ There is also a need for slow cells.The question of why we need them arises.<br 
 
 </details>
 
+# Day 2
+<details>
+  <summary></summary>
+</details>
+
 # References
 1. https://yosyshq.net/yosys/
 2. https://en.wikipedia.org/wiki/Icarus_Verilog
