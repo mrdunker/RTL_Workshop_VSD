@@ -334,7 +334,30 @@ There is also a need for slow cells.The question of why we need them arises.<br 
 <details>
   <summary>Inroduction</summary>
   In this section we will breifly go about understaing a bit more about the .lib file and other stuff as well.
-  
+</details>
+<details>
+  <summary>Overview on .lib</summary>
+  Firstly lets open the sky130_fd_sc_hd__tt_025C_1v80.lib using the Vim editer.<br />
+ 
+  ```
+  gvim ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  ```
+The nomenclature of the above .lib file is :
+1. sky - skywater
+2. 130 - 130 nanaometer(nm)
+3. tt - typical  library
+4. 025C - Temperature
+5. 1v80 - Voltage
+<br />
+
+When we look into a library 'Process Voltage Temparature' is relevent for a design to work.<br />
+1. Process is important becasue of variations in the fabrication.
+2. Voltage is important because there will be variation of behaviour of circuit due to the same.
+3. Semiconductors are very dependent on tempereature and we would need the design to work in a wide range of        geographies having different temperatures.
+
+We need to factor in all these conditions when designing and so our libraries will also model these specifications.<br />
+
+
 </details>
 
 # References
