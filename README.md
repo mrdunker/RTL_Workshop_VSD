@@ -392,9 +392,46 @@ modules and so on.<br />
 
   In this section we are going to sythesize the same design in both Hierarchical and Flat to illustrate the difference in the netlist of both.<br />
   <br />
-  
-  **Hierarchical**<br />
-  
+  **Hierarchical illustration**<br />
+  The Figure below shows the diagram of a design named multiple_module.v:<br />
+![heir1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/602be1f3-2704-4d82-b754-688b467b89cb)
+<br />
+It is seen that everything is divided into smaller submodules.<br />
+
+The figure below is the netlist for the hierarchical design:<br />
+![heir_netlist](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cd4d44e5-2681-4387-a000-87b4f1668e5f)
+<br />
+<br />
+**Flat illustration**<br />
+The figure below shows the diagram for the flattened design:<br />
+![flat](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/39b67082-8c56-4b3a-812c-03ef7bc66d34)
+<br />
+We write the 'flatten' command just before the write_verilog command to flatten the netlist.<br />
+<br />
+The figure below shows the flattened out netlist of the design.<br />
+![flatten](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ebb93a7c-9fee-40a7-b18a-637c54bdfc6f)
+<br />
+<br />
+
+**Submodule Level Synthesis**<br />
+Why is this done?
+1. When we have multiple instantiations of the same module we prefer the submodule level by synthesis.
+2. We might also want to use the divide and concur procedure,divide up the circuit to get best possible design at top level.
+
+We need to make a small change in the synth command in yosys:
+
+```
+synth -top <sub_module_name>
+```
+
+<br />
+Illustrated below:<br />
+
+![submd1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/6ea4c027-ad4f-4a37-9fe8-bed3113761db)
+<br />
+The design diagram for the same is shown below:<br />
+
+![sub1netlist](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/df1060dc-50eb-4943-8862-b787ace3629c)
   
   
 </details
