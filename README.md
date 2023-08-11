@@ -381,6 +381,22 @@ Below are some of the Vim commands used:<br />
 <details>
   <summary>Hierarchical Vs. Flat Synthesis</summary>
   
+  ### Hierarchical Synthesis:
+In hierarchical synthesis, the design of a complex digital circuit is divided into smaller, more manageable modules or blocks. Each module represents a functional unit or a specific sub-task the 
+overall design. These modules are designed and optimized separately, and then they are integrated into the larger system. The design hierarchy can have multiple levels, with modules containing sub-
+modules and so on.<br />
+
+  ### Flat Synthesis:
+  In flat synthesis, the entire digital circuit is synthesized as a single monolithic unit, without breaking it down into smaller modules. This approach is suitable for smaller designs where the 
+  complexity doesn't warrant a hierarchical organization.<br />
+
+  In this section we are going to sythesize the same design in both Hierarchical and Flat to illustrate the difference in the netlist of both.<br />
+  <br />
+  
+  **Hierarchical**<br />
+  
+  
+  
 </details
 
 # References
