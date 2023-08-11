@@ -434,7 +434,23 @@ The design diagram for the same is shown below:<br />
 ![sub1netlist](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/df1060dc-50eb-4943-8862-b787ace3629c)
   
   
-</details
+</details>
+
+<details>
+  <summary>Various Flops and Flop coding styles</summary>
+  <br />
+  Here we are going to look at some questions such as the ones below:
+  
+  1. How to code a flop.
+  2. What are the flops that are present
+  3. What are the coding standards for it.
+     
+  #### Why do we need to use flops ? <br />
+  Consider the figure given below consisting of an and gate and or gate.<br />
+  there exists a propagation delay,and due to this the ouput glitches.This is a serious issue as the number of combinational circuits increase the number of glitches also increases.<br />
+  
+
+</details>
 
 # References
 1. https://yosyshq.net/yosys/
