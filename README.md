@@ -332,7 +332,9 @@ There is also a need for slow cells.The question of why we need them arises.<br 
 
 # Day 2
 <details>
-  <summary></summary>
+  <summary>Inroduction</summary>
+  In this section we will breifly go about understaing a bit more about the .lib file and other stuff as well.
+  
 </details>
 
 # References
