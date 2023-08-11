@@ -357,8 +357,30 @@ When we look into a library 'Process Voltage Temparature' is relevent for a desi
 
 We need to factor in all these conditions when designing and so our libraries will also model these specifications.<br />
 
+Below figure shows the the library sky130_fd_sc_hd__tt_025C_1v80.lib on Vim edior:<br />
+![day1_1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/e2e76a6b-3316-45ee-9b08-71f0ba45e4e8)
 
+The Below figure shows both the library sky130_fd_sc_hd__tt_025C_1v80.lib and the .v file sky130_fd_sc_hd.v which consits of the design of any given cell in the above mentioned library:<br/>
+![day1_2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cb52c2a2-9905-42a5-8c7d-1b8e9b9c0d05)
+
+The Below side by side figure shows the details of different flavours of a 2 input and gate:<br />
+Here it is seen that the are of all three are different.In Day 1 we have discussed the effect of area in efficency and delay etc..<br />
+![day1_3x](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/6d5738b1-5fa3-4a08-8103-c7ff45b55afe)
+
+Below are some of the Vim commands used:<br />
+```
+:syn off "turn off highlighting
+:se hls  "highlight cell
+:se nu   "see line numbers
+:g//     "see all the cells('highlighted ones')
+:sp <directory>    "open a file with a directory along with 
+:vsp     "opens the same file again side by side         
+
+```
 </details>
+<details>
+  <summary>Hierarchical Vs. Flat Synthesis</summary>
+</details
 
 # References
 1. https://yosyshq.net/yosys/
