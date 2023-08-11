@@ -463,6 +463,12 @@ synth -top <sub_module_name>
   D-ff's give output only at the posedge of the clk.So,the next combinational circuit (block) will see only a stable input.
 
   ### How do i code the Flop?
+  Below are the three different ways in which we can code the flop.
+  1. Syncranous & Asynchronous reset
+  2. Syncranous reset
+  3. Asynchronus reset
+
+  ![dffs](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/19af309b-8fa9-49bd-b0f4-4c235a07bc1c)
   
 
 </details>
