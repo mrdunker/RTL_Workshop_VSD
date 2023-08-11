@@ -380,6 +380,7 @@ Below are some of the Vim commands used:<br />
 </details>
 <details>
   <summary>Hierarchical Vs. Flat Synthesis</summary>
+  
 </details
 
 # References
