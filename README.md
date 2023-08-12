@@ -474,9 +474,23 @@ synth -top <sub_module_name>
 <details>
   <summary>Lab flop synthesis simulations</summary>
   <br />
-  Here we are going to simulate D-Flip flops with Asynchronous, Synchronous, and Synchronous & Asynchronous reset with Iverilog and GTKwave.<br />
+  Here we are going to simulate D-Flip flops with Asynchronous reset & set, Synchronous, and Synchronous & Asynchronous reset with Iverilog and GTKwave.<br />
 
   ### Asynchronous reset
+
+  Here we are going to be using a .v file 'dff_asyncres.v' and its corresponding testbench. Run it on verilog and simulate it on GTKwave ash shown below.<br />
+  ![d](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/72d36956-ffea-401c-ba45-2cb08adf5ce1)
+  <br />
+  Below we can see the output waveform of the design.<br />
+  In this case, at around the 550ns range, we see that the output q follows the clk. i.e. q is synchronous with the clock.<br />
+  ![d1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/81d9993f-d83b-48d0-a963-18b7afa9923c)
+  <br />
+  If we consider this point around the 1090ns-1100ns range. when the async_reset is high the output 'q' will immediately go low. This is called asynchronous reset. As illustrated below.<br />
+  ![d2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a286d6dc-876b-4044-99bb-16ad429947be)
+
+  ### Asynchronous set
+  <br />
+  Here we do the same. The simulation output waveforms are shown below.<br />
   
   
 </details>
