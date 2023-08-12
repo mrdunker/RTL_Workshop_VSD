@@ -63,7 +63,7 @@ Image after Installation:
 <details>
 <summary>OpenSTA</summary>
 <br />
-OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats.
+OpenSTA is a gate-level static timing verifier. As a stand-alone executable, it can be used to verify the timing of a design using standard file formats.
 
 - Verilog netlist
 - Liberty library
@@ -71,7 +71,7 @@ OpenSTA is a gate level static timing verifier. As a stand-alone executable it c
 - SDF delay annotation
 - SPEF parasitics
 
-OpenSTA uses a TCL command interpreter to read the design, specify timing constraints and print timing reports.<br /><br />
+OpenSTA uses a TCL command interpreter to read the design, specify timing constraints, and print timing reports.<br /><br />
 Steps to install OpenSTA:
 ```
 Went to the GitHub repo: https://github.com/The-OpenROAD-Project/OpenSTA
@@ -522,6 +522,7 @@ synth -top <sub_module_name>
 </details>
 <details>
   <summary>Optimizations</summary>
+  <br />
   This section deals with some special cases. Particularly two peculiar .v files.<br />
   let's open them in the Vim editor using the following Shell command:<br />
   
@@ -530,7 +531,20 @@ synth -top <sub_module_name>
   ```
 Here we are opening two files mult_2.v and mult_8.v.<br />
 <br />
-**Let us consider the first one 'mult_2.v':** <br />
+**Let us consider the first one 'mult_2.v' :** <br />
+The below figure shows the mult_2.v file.<br />
+![ex3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/9fa56ed3-a9ab-412a-9e15-24a3dc92c83b)
+<br /><br />
+The block diagram below explains the basic functionality of the design:<br />
+![ex1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/d4237401-d4f0-4ed5-b891-ea6a58106ddd)
+<br /><br />
+But as being a special case there must be a **twist** to it.<br />
+Apparently, there is no need for any extra hardware components. In the below figure, we can see the input 'a' and output 'y'.<br />
+(The output y is basically zero appended to 'a' {a,1'b0}. It is illustrated below.<br />
+
+![ex2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/d32db5ed-227b-47ef-a8b6-1e38c4ede5bd)
+
+**Let us consider the second one 'mult_8.v' :** <br />
 
 </details>
 
