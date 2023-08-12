@@ -505,6 +505,10 @@ synth -top <sub_module_name>
   In the below waveform, we can see between the 500ns-600ns range, when the sync_reset is high, the output follows the clock.<br /> As shown below:<br />
   
   ![db1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/aefed66f-eae9-498d-b0e5-57fa561f8fae)
+
+  ### Synthesis of the above three designs:
+  <br />
+  
   
   
 </details>
