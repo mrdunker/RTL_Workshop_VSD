@@ -520,6 +520,19 @@ synth -top <sub_module_name>
   
   
 </details>
+<details>
+  <summary>Optimizations</summary>
+  This section deals with some special cases. Particularly two peculiar .v files.<br />
+  let's open them in the Vim editor using the following Shell command:<br />
+  
+  ```
+  gvim mult_*.v -o
+  ```
+Here we are opening two files mult_2.v and mult_8.v.<br />
+<br />
+**Let us consider the first one 'mult_2.v':** <br />
+
+</details>
 
 # References
 1. https://yosyshq.net/yosys/
