@@ -508,7 +508,15 @@ synth -top <sub_module_name>
 
   ### Synthesis of the above three designs:
   <br />
+  Synthesis diagram for Asynchronous reset:<br />
   
+  ![nl1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1dd3e6a7-d365-46ee-ba6b-695e74024159)
+  Synthesis diagram for Asynchronous set:<br />
+  
+  ![nl2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8d59f4b8-ea11-44eb-adf7-928cd7b16495)
+  Synthesis diagram for Synchronous reset:<br />
+  
+  ![nl3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/fe0a583c-c216-482e-816a-2ea4b3d2a88b)
   
   
 </details>
