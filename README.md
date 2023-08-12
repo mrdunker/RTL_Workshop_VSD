@@ -48,8 +48,8 @@ Image after Installation:
 <details>
 <summary> GTKWave </summary>
 <br />
-GTKWave is a VCD waveform viewer based on the GTK library. This viewer support VCD and LXT formats for signal dumps.<br />
-Waveform dumps are written by the Icarus Verilog runtime program vvp. The user uses $dumpfile and $dumpvars system tasks to enable waveform dumping, then the vvp runtime takes care of the rest. The output is written into the file specified by the $dumpfile system task. If the $dumpfile call is absent, the compiler will choose the file name dump.vcd or dump.lxt, depending on runtime flags.The example below dumps everything in and below the test module.<br /><br />
+GTKWave is a VCD waveform viewer based on the GTK library. This viewer supports VCD and LXT formats for signal dumps.<br />
+Waveform dumps are written by the Icarus Verilog runtime program vvp. The user uses $dumpfile and $dumpvars system tasks to enable waveform dumping, then the vvp runtime takes care of the rest. The output is written into the file specified by the $dumpfile system task. If the $dumpfile call is absent, the compiler will choose the file name dump.vcd or dump.lxt, depending on runtime flags. The example below dumps everything in and below the test module.<br /><br />
 Steps to install GTKWave:
 
 ```
@@ -74,8 +74,8 @@ OpenSTA is a gate level static timing verifier. As a stand-alone executable it c
 OpenSTA uses a TCL command interpreter to read the design, specify timing constraints and print timing reports.<br /><br />
 Steps to install OpenSTA:
 ```
-Went to the github repo: https://github.com/The-OpenROAD-Project/OpenSTA
-and did the process mentioned within (intsalled the prerequisites and installed OpenSTA with Cmake).
+Went to the GitHub repo: https://github.com/The-OpenROAD-Project/OpenSTA
+and did the process mentioned within (installed the prerequisites and installed OpenSTA with Cmake).
 ```
 Image after installation:
 ![opensta png](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/bcc4cf94-2696-4f19-bfcd-20a48424276f)
@@ -179,15 +179,15 @@ Image after installation:
 <details>
   <summary>Introduction</summary>
   <br />
-  This section mainly focuses on Iverilog,GTKwave and Yosys.The simulation and synthesis of a basic 2x1 mux is also done.<br /><br />
+  This section mainly focuses on Iverilog,GTKwave and Yosys. The simulation and synthesis of a basic 2x1 mux is also done.<br /><br />
  A simulator refers to a software tool or program that simulates the behavior of the digital design described at the RTL level. It allows designers to test and verify 
  the functionality of their digital designs before actual hardware is fabricated. Simulators take the RTL description and execute it in a software 
- environment, allowing the designer to observe how the design behaves under different conditions and inputs.The simulator looks for changes in the input.Upon change inn 
- the input the output is evaluated.If no change in input is observed ,there will be no change in output. 
+ environment, allowing the designer to observe how the design behaves under different conditions and inputs. The simulator looks for changes in the input.Upon change inn 
+ the input the output is evaluated. If no change in input is observed, there will be no change in output. 
  Icarus Verilog is an open-source RTL simulator that supports Verilog. It's widely used in academia and smaller projects due to its free and open nature.<br /><br/>
- A test bench is a set of simulation code and associated data that is used to verify the correctness and functionality of a digital design described at the Register 
+ A test bench is a set of simulation codes and associated data that is used to verify the correctness and functionality of a digital design described at the Register 
  Transfer Level (RTL) or other abstraction levels. It serves as a virtual environment in which the design can be tested before it's physically implemented in 
- hardware.The design may have  more than one inputs and outputs ,while the Test bench does'nt a primary input or a primary output.<br /><br />
+ hardware.The design may have  more than one input and output, while the Test bench doesn't a primary input or a primary output.<br /><br />
 
  **The Iverilog based simulation flow is that of below :** <br />
  ![simulation flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/3d965540-bb96-4bb3-9284-b446b57621fb)
@@ -445,31 +445,40 @@ synth -top <sub_module_name>
   2. What are the flops that are present
   3. What are the coding standards for it.
      
-  #### Why do we need to use flops ? <br />
+  #### Why do we need to use flops? <br />
   Consider the logic diagram given below consisting of an and gate and or gate.<br />
-  there exists a propagation delay,and due to this the ouput glitches.This is a serious issue as the number of combinational circuits increase the number of glitches also increases.<br />
+  there exists a propagation delay, and due to this the output glitches. This is a serious issue as the number of combinational circuits increases the number of glitches also increases.<br />
   
   ![logicdiagram](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/f20e2466-21d0-4a3a-974f-010eb8ef45d5)
 
-  (In the figure below the glitch caused in above logic diagram illustrated in the blue shaded area:)<br />
+  (In the figure below the glitch caused in the above logic diagram is illustrated in the blue shaded area:)<br />
   ![glitch](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/701d8ca3-badb-4587-8324-c110309eef6c)
 
   <br />
-  Like mentioned above, more combinational circuits mean more glitches so to avoid glitches,we need to store the data, for that we use flops.<br />
+  Like mentioned above, more combinational circuits mean more glitches so to avoid glitches, we need to store the data, for that we use flops.<br />
   (The figure below illustrates the above problem and solution:)<br />
   
   ![combi](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/841dc701-aad2-4e15-82d9-d969d0ab10cc)
   <br />
-  D-ff's give output only at the posedge of the clk.So,the next combinational circuit (block) will see only a stable input.
+  D-ff's give output only at the posedge of the clk. So, the next combinational circuit (block) will see only a stable input.
 
-  ### How do i code the Flop?
+  ### How do I code the Flop?
   Below are the three different ways in which we can code the flop.
-  1. Syncranous & Asynchronous reset
+  1. Synchronous & Asynchronous reset
   2. Syncranous reset
-  3. Asynchronus reset
+  3. Asynchronous reset
 
   ![dffs](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/19af309b-8fa9-49bd-b0f4-4c235a07bc1c)
 
+</details>
+<details>
+  <summary>Lab flop synthesis simulations</summary>
+  <br />
+  Here we are going to simulate D-Flip flops with Asynchronous, Synchronous, and Synchronous & Asynchronous reset with Iverilog and GTKwave.<br />
+
+  ### Asynchronous reset
+  
+  
 </details>
 
 # References
