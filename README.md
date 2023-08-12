@@ -1,8 +1,8 @@
 # iiitb_emil_class
-This github repository summarises the class work done on Physical Design for ASIC's (VL508)
+This GitHub repository summarises the class work done on Physical Design for ASICs (VL508)
 
 # Day 0
-Following are the steps for installation of nessasary tools:
+Following are the steps for the installation of necessary tools:
 <details>
 <summary> Yosys</summary>
 <br />
@@ -179,7 +179,7 @@ Image after installation:
 <details>
   <summary>Introduction</summary>
   <br />
-  This section mainly focuses on Iverilog,GTKwave and Yosys. The simulation and synthesis of a basic 2x1 mux is also done.<br /><br />
+  This section mainly focuses on Iverilog,GTKwave, and Yosys. The simulation and synthesis of a basic 2x1 mux is also done.<br /><br />
  A simulator refers to a software tool or program that simulates the behavior of the digital design described at the RTL level. It allows designers to test and verify 
  the functionality of their digital designs before actual hardware is fabricated. Simulators take the RTL description and execute it in a software 
  environment, allowing the designer to observe how the design behaves under different conditions and inputs. The simulator looks for changes in the input.Upon change inn 
@@ -189,23 +189,23 @@ Image after installation:
  Transfer Level (RTL) or other abstraction levels. It serves as a virtual environment in which the design can be tested before it's physically implemented in 
  hardware.The design may have  more than one input and output, while the Test bench doesn't a primary input or a primary output.<br /><br />
 
- **The Iverilog based simulation flow is that of below :** <br />
+ **The Iverilog-based simulation flow is that of below:** <br />
  ![simulation flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/3d965540-bb96-4bb3-9284-b446b57621fb)
 
- After Simulation Synthesis is required.For this we are using a tool called Yosys,which will gives us a netlist,which is a representation of the design in standard 
- cells.There are certain commands like read_verilog , read_liberty and write_verilog used for the synthesis process.After Synthesis verification of the netlist is also 
+ After Simulation Synthesis is required. For this, we are using a tool called Yosys, which will give us a netlist, which is a representation of the design in standard 
+ cells. There are certain commands like read_verilog, read_liberty, and write_verilog used for the synthesis process. After Synthesis verification of the netlist is also 
  done. <br /><br />
 **A basic synthesis flow is as shown below:** <br />
  ![synthesis flow](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/abcd8a60-8222-433e-a53e-ff1485ecd810)
- <br />( .lib is explained in the 'Other Relevent Data' section)<br />
- <br />The set of primary inputs or primary outputs will remain same in both RTL design and netlist,i.e. The testbench used for simulation and verification is same.<br />
+ <br />( .lib is explained in the 'Other Relevant Data' section)<br />
+ <br />The set of primary inputs or primary outputs will remain the same in both RTL design and netlist,i.e. The testbench used for simulation and verification is same.<br />
 </details>
 <details>
     <summary>Verilog codes</summary>
-  We are simulating a simple 2x1 mux using iverilog and GTKwave, the codes have been taken from the github repo:<br />
+  We are simulating a simple 2x1 mux using iverilog and GTKwave, the codes have been taken from the GitHub repo:<br />
   https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
   <br /><br />
-  The above git has been cloned and saved in local system as shown below.<br />
+  The above git has been cloned and saved in the local system as shown below.<br />
   
   ![git_clone](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/05e19c55-237f-47b0-b2df-4a4839a12e2c)
   
@@ -214,15 +214,15 @@ Image after installation:
 <details>
     <summary>Simulation: iverilog and GTKwave</summary>
   <br />
-  The below linux shell commands are typed into the terminal to get exceute the mux design file and the test bench.A vcd(value change dump) file is generated
-  and that is opend using GTKwave as shown below. 
+  The below Linux shell commands are typed into the terminal to get execute the mux design file and the test bench. A vcd(value change dump) file is generated
+  and that is opened using GTKwave as shown below. 
   
 ```
 iverilog good_mux.v tb_good_mux.v
 ./a.out
 gtkwave tb_good_mux.vcd
 ```
-Below are the Shell commands screen shot for the execution of both .v files (design and test bench):<br />
+Below are the Shell commands screenshot for the execution of both .v files (design and test bench):<br />
 ![iverilog_gtk](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/69775736-ff34-4c3c-8231-87dd9f111e2b)
 <br />
 <br />
@@ -233,7 +233,7 @@ Below is the GTKwave output for the same:<br />
     <summary>Synthesis: Yosys</summary>
 <br />
 Here we are Synthesizing a basic 2x1 mux which we have simulated in iverilog and GTKwave as shown in the above sections.<br />
-In the directory, we need to input shell terminal command yosys for synthesis below shown are the commmands used:
+In the directory, we need to input the shell terminal command yosys for synthesis below shown are the commands used:
   
   ```
 yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
@@ -257,7 +257,7 @@ yosys> !gvim good_mux_netlist.v
 ![synth2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/35ee2316-6785-4509-a254-1d9e7607336f)
 <br />
 
-**The Screenshot below shows how command abc -liberty is done:** <br />
+**The Screenshot below shows how the command abc -liberty is done:** <br />
 ![synth3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/2f53dd5c-b782-4f0b-8185-c334c9d3f13a)
 <br />
 
@@ -274,7 +274,7 @@ yosys> !gvim good_mux_netlist.v
   
 </details>
 <details>
-    <summary>Other Relevent data</summary>
+    <summary>Other Relevant data</summary>
   <br />
   
   **RTL Design:** <br />
@@ -498,6 +498,13 @@ synth -top <sub_module_name>
   In the following waveform, when the async_set is high the output will be set high and will not follow  the 'd' input.<br />
   
   ![ds2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/b203a94a-7fc0-4772-8787-d3b0afe513a4)
+
+  ### Synchronous reset:
+  <br />
+  The steps for simulation are the same except here we use the dff_syncres.v file and its corresponding test bench.<br />
+  In the below waveform, we can see between the 500ns-600ns range, when the sync_reset is high, the output follows the clock.<br /> As shown below:<br />
+  
+  ![db1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/aefed66f-eae9-498d-b0e5-57fa561f8fae)
   
   
 </details>
