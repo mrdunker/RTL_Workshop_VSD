@@ -545,6 +545,13 @@ Apparently, there is no need for any extra hardware components. In the below fig
 ![ex2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/d32db5ed-227b-47ef-a8b6-1e38c4ede5bd)
 
 **Let us consider the second one 'mult_8.v' :** <br />
+The below figure shows the mult_8.v file<br />
+![t1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/5f27eee1-ffd6-4a05-b034-0b473b2d555f)
+<br />
+Here we are doing ax9=y, which can be rewritten as {ax(8+1)=y}<br />
+ax9 = {a,0,0,0} + a ----> {a,a}<br />
+![t2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/dae94818-b88d-427f-892b-9ee7736f0c04)
+
 
 </details>
 
