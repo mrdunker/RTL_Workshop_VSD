@@ -287,45 +287,45 @@ In RTL design, the designer specifies the functionality and behavior of the digi
 **Synthesis:** <br />
 RTL design is the process of transforming a high-level functional description of a digital system into a gate-level netlist that can be physically implemented on 
 hardware platforms. This process involves mapping the logic to standard cells, optimizing for performance, and ensuring timing requirements are met.
-A Design is converted into gates and the connections are made between those gates,the final output file is what is termed as a netlist.<br /><br />
+A Design is converted into gates and the connections are made between those gates, the final output file is what is termed as a netlist.<br /><br />
 
 ### What is .lib ?
 
 1. .lib is a collection of various logical modules
-2. It includes basic gates like and ,or etc..
+2. It includes basic gates like and, or etc...
 3. There are different flavours(versions) of the same gate
     - Slow
     - Medium
     - Fast
 
-We need different flavours of gates because combinational delays in logical path will determine the maximum speed of operation of digital logic circuits.<br />
+We need different flavors of gates because combinational delays in logical paths will determine the maximum speed of operation of digital logic circuits.<br />
 <br />
-### Why do we need different flavours of gates?
+### Why do we need different flavors of gates?
 
-1. Different flavors of gates are necessary to provide a diverse toolkit for designing and implementing electronic circuits.They cater to various logical functions,
+1. Different flavors of gates are necessary to provide a diverse toolkit for designing and implementing electronic circuits. They cater to various logical functions,
   optimization requirements, noise considerations, and implementation constraints, enabling the creation of complex and efficient systems.
-2. Combinational delays in logic path determine the max speed of operation of a digital logic circuit.
+2. Combinational delays in the logic path determine the max speed of operation of a digital logic circuit.
 
 <br />
 
 ![dff_combi](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/01b72e99-69f9-4453-9e17-8f2a082de217)
 
-- Based on the figure shown above,Tclk **Tcq_a** ,**Tcombi**,**Tsetup_b** are the time period of clock,preopagation delay of A,Combinational delay,setup time of B 
+- Based on the figure shown above, Tclk **Tcq_a**,**Tcombi**,**Tsetup_b** are the time period of the clock,propagation delay of A, Combinational delay, setup time of B 
   respectively.
 - **Tclk > Tcq_a + Tcombi + Tsetup_b**
 - one clock pulse should be long enough for the delay of the 'A'-D.FF,combinational delay and setup time for 'B'-D.FF to be incorporated.
 - **Tsetup_b** is the time required for the the 'B'-D.FF data to be stable.
 
-There is also a need for slow cells.The question of why we need them arises.<br />
-- To ensure there is no 'HOLD' issues at B-D.FF, we need certain cells to work slowly
-- We need cells that work fast to meet the required performance and we need the cells that work slow to meet HOLD.
+There is also a need for slow cells. The question of why we need them arises.<br />
+- To ensure there are no 'HOLD' issues at B-D.FF, we need certain cells to work slowly
+- We need cells that work fast to meet the required performance and we need cells that work slow to meet HOLD.
 
 ## Faster Cells Vs. Slower Cells:
-- A load in a digital logic is a capacitor
+- A load in digital logic is a capacitor
 - A faster charging or discharging means less delay
 - To increase the rate of charging or discharging we need to widen the transistors.
-- Wider transistor give lower delay : but more is requied and more power is required
-- Narrow tranistors give out more delay  : we need less area and less power is consumed.
+- Wider transistor gives lower delay: but more is required and more power is required
+- Narrow transistors give out more delay  : we need less area and less power is consumed.
 
 
 </details>
@@ -333,7 +333,7 @@ There is also a need for slow cells.The question of why we need them arises.<br 
 # Day 2
 <details>
   <summary>Introduction</summary>
-  In this section we will breifly go about understaing a bit more about the .lib file and other stuff as well.
+  In this section, we will briefly go about understanding a bit more about the .lib file and other stuff.
 </details>
 <details>
   <summary>Overview on .lib</summary>
@@ -344,27 +344,27 @@ There is also a need for slow cells.The question of why we need them arises.<br 
   ```
 The nomenclature of the above .lib file is :
 1. sky - skywater
-2. 130 - 130 nanaometer(nm)
+2. 130 - 130 nanometer(nm)
 3. tt - typical  library
 4. 025C - Temperature
 5. 1v80 - Voltage
 <br />
 
-When we look into a library 'Process Voltage Temparature' is relevent for a design to work.<br />
-1. Process is important becasue of variations in the fabrication.
-2. Voltage is important because there will be variation of behaviour of circuit due to the same.
-3. Semiconductors are very dependent on tempereature and we would need the design to work in a wide range of        geographies having different temperatures.
+When we look into a library 'Process Voltage Temparature' is relevant for a design to work.<br />
+1. Process is important because of variations in the fabrication.
+2. Voltage is important because there will be variations in circuit behaviour due to the same.
+3. Semiconductors are very dependent on temperature and we would need the design to work in a wide range of        geographies having different temperatures.
 
 We need to factor in all these conditions when designing and so our libraries will also model these specifications.<br />
 
 Below figure shows the the library sky130_fd_sc_hd__tt_025C_1v80.lib on Vim edior:<br />
 ![day1_1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/e2e76a6b-3316-45ee-9b08-71f0ba45e4e8)
 
-The Below figure shows both the library sky130_fd_sc_hd__tt_025C_1v80.lib and the .v file sky130_fd_sc_hd.v which consits of the design of any given cell in the above mentioned library:<br/>
+The Below figure shows both the library sky130_fd_sc_hd__tt_025C_1v80.lib and the .v file sky130_fd_sc_hd.v which consists of the design of any given cell in the above-mentioned library:<br/>
 ![day1_2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cb52c2a2-9905-42a5-8c7d-1b8e9b9c0d05)
 
 The Below side by side figure shows the details of different flavours of a 2 input and gate:<br />
-Here it is seen that the are of all three are different.In Day 1 we have discussed the effect of area in efficency and delay etc..<br />
+Here it is seen that the area of all three are different.On Day 1 we discussed the effect of the area in efficiency and delay etc..<br />
 ![day1_3x](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/6d5738b1-5fa3-4a08-8103-c7ff45b55afe)
 
 Below are some of the Vim commands used:<br />
@@ -390,10 +390,10 @@ modules and so on.<br />
   In flat synthesis, the entire digital circuit is synthesized as a single monolithic unit, without breaking it down into smaller modules. This approach is suitable for smaller designs where the 
   complexity doesn't warrant a hierarchical organization.<br />
 
-  In this section we are going to sythesize the same design in both Hierarchical and Flat to illustrate the difference in the netlist of both.<br />
+  In this section, we will synthesize the same design in both Hierarchical and Flat to illustrate the difference in the netlist of both.<br />
   <br />
   **Hierarchical illustration**<br />
-  (The Figure below shows the diagram of a design named multiple_module.v:)<br />
+  (The Figure below shows the schematic diagram of a design named multiple_module.v:)<br />
 ![heir1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/602be1f3-2704-4d82-b754-688b467b89cb)
 <br />
 It is seen that everything is divided into smaller submodules.<br />
@@ -403,12 +403,12 @@ It is seen that everything is divided into smaller submodules.<br />
 <br />
 <br />
 **Flat illustration**<br />
-(The figure below shows the diagram for the flattened design:)<br />
+(The figure below shows the flattened-out netlist for the flattened design:)<br />
 ![flat](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/39b67082-8c56-4b3a-812c-03ef7bc66d34)
 <br />
 We write the 'flatten' command just before the write_verilog command to flatten the netlist.<br />
 <br />
-(The figure below shows the flattened out netlist of the design).<br />
+(The figure below shows the schematic diagram of the design).<br />
 ![flatten](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ebb93a7c-9fee-40a7-b18a-637c54bdfc6f)
 <br />
 <br />
@@ -416,7 +416,7 @@ We write the 'flatten' command just before the write_verilog command to flatten 
 **Submodule Level Synthesis**<br />
 Why is this done?
 1. When we have multiple instantiations of the same module we prefer the submodule level by synthesis.
-2. We might also want to use the divide and concur procedure,divide up the circuit to get best possible design at top level.
+2. We might also want to use the divide and concur procedure, divide up the circuit to get the best possible design at the top level.
 
 We need to make a small change in the synth command in yosys:
 
@@ -469,7 +469,6 @@ synth -top <sub_module_name>
   3. Asynchronus reset
 
   ![dffs](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/19af309b-8fa9-49bd-b0f4-4c235a07bc1c)
-  
 
 </details>
 
