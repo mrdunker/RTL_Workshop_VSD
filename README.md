@@ -498,7 +498,7 @@ synth -top <sub_module_name>
   In the following waveform, when the async_set is high the output will be set high and will not follow  the 'd' input.<br />
   
   ![ds2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/b203a94a-7fc0-4772-8787-d3b0afe513a4)
-
+  
   ### Synchronous reset:
   <br />
   The steps for simulation are the same except here we use the dff_syncres.v file and its corresponding test bench.<br />
