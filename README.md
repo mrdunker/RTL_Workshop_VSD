@@ -649,7 +649,10 @@ without changing its functionality. The primary goal of retiming is to improve t
 Also known as flip-flop cloning or state machine cloning, is a technique used to replicate or duplicate certain portions of sequential logic circuits.
 This technique is employed to improve performance, reduce critical path delays, or optimize power consumption in a design without altering its functional behavior.<br />
 
- 
+</details>
+
+<details>
+  <summary>Lab Combination logic optimizations</summary>
 </details>
 
 # References
