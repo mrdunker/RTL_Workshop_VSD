@@ -570,6 +570,37 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
 <br />
 (The below diagram shows the schematic diagram for the same:)<br />
 ![m2a](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8ac4fe85-e8c8-4267-95d6-1b573f5c6815)
+
+
+</details>
+
+# Day 3
+<details>
+<summary>Introduction to optimizations</summary>
+  <br />
+  Here we are going to be looking at logic optimizations.<br />
+  There are two kinds of logic optimizations:<br />
+  
+  1. Combinational Logic optimizations
+  2. Sequential Logic optimizations
+<br />
+ Let us look into those.<br/>
+
+ ## Combinational logic optimization: 
+
+- It is done to get the most optimized design
+- The most optimized design will be very efficient in both its area and power characteristics.
+
+  Below are the two techniques used for the same:<br />
+
+  1. Constant Propagation
+  2. Boolean logic optimizations
+
+  ### Constant propagation:
+
+  Let's consider Fig: A having an output Y. When deriving that circuit using MOS transistors we will need six MOSFETS.<br />
+  if we consider input a = low. The total logic circuit will reduce to Fig: B. And has only a requirement of one inverter i.e 2 MOSFETS.<br /> 
+
 </details>
 
 # References
