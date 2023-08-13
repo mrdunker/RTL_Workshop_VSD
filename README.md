@@ -686,12 +686,16 @@ This technique is employed to improve performance, reduce critical path delays, 
   
   Here we are performing the synthesis of opt_check3.v. it is done the same way as the above labs <br />
   Relevent Screenshots are attached below.<br />
+  ![y0](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/846bfd51-46b1-4e91-87ab-a03184260c38)
+  ![y1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/563d5225-85bf-4d71-a8bf-dbecc13e41a3)
 
 
   ### LAB 4:
     
   Here we are performing the synthesis of opt_check4.v. it is done the same way as the above labs <br />
   Relevent Screenshots are attached below.<br />
+  ![t1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/55b15def-41ee-46d5-bfe9-dbcac222f34b)
+  ![t2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cd28a54d-c45f-4d07-99db-f84912724f1f)
 
 
   ### LAB 5:
