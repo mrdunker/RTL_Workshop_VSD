@@ -729,6 +729,14 @@ This technique is employed to improve performance, reduce critical path delays, 
   ### LAB 2:
 
   Here we are going to simulate and synthesize dff_const3.v .<br />
+  ![dff1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/d7d5c0d7-2ca7-4d75-93f1-df91cc68bb58)
+  ![dff2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ea204811-7f02-4302-9734-254ba6d8e115)
+  ![dff3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a5dab47a-cc74-472b-b252-cdf9b60093b5)
+
+  ### LAB 3: 
+  
+  ### LAB 4:
+
   
     
 </details>
