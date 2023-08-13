@@ -712,7 +712,11 @@ This technique is employed to improve performance, reduce critical path delays, 
   ### LAB 1:
 
   Here we are going to simulate and synthesize two .v files,'dff_const1.v' and 'dff_const2.v'.<br />
-  
+  ![dff1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8e643380-c45f-49fa-a7fb-dd9cea1f4393)
+  ![dff2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8cf12e40-2aa6-4c38-94e5-9cfe934e2c54)
+  ![dff3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a3744ab6-08b6-4fbb-b5c1-1cc61a76f21b)
+  ![dff4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1b36fbe1-6925-493c-873d-9e35bbd6d36d)
+    
 </details>
 
 <details>
