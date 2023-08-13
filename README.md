@@ -676,7 +676,7 @@ This technique is employed to improve performance, reduce critical path delays, 
   ### LAB 2:
   
   Here we are performing the synthesis of opt_check2.v. it is done the same way as **LAB 1** <br />
-  We get an optimized design of a 2 input or gate.<br />
+  We get an optimized design of a 2-input or gate.<br />
   Relevent Screenshots are attached below.<br />
   ![a0](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8484ce20-e2a9-49f5-a96d-b7db0c2b46f7)
   ![a1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/3c3571d9-0498-4ff9-8a3e-516c513056fa)
