@@ -517,6 +517,13 @@ synth -top <sub_module_name>
   Synthesis diagram for Synchronous reset:<br />
   
   ![nl3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/fe0a583c-c216-482e-816a-2ea4b3d2a88b)
+  <br />
+  <br />
+  During synthesis, after the **synth -top** command in Yosys, we should use the following command to map DFF cells to sequential cells.
+  
+  ```
+  dfflibmap -liberty ..<directory of the .lib file>
+  ```
   
   
 </details>
