@@ -653,6 +653,19 @@ This technique is employed to improve performance, reduce critical path delays, 
 
 <details>
   <summary>Lab Combination logic optimizations</summary>
+  <br />
+  Here we will be doing the labs that illustrate combinational logic optimizations.<br />
+  We will also be using a Yosys command to purge all unused cells:
+
+  ```
+  opt_clean -purge
+  ```
+  <br />
+  
+  ### LAB 1:  
+
+  
+  
 </details>
 
 # References
