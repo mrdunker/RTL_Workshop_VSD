@@ -707,9 +707,17 @@ This technique is employed to improve performance, reduce critical path delays, 
 
 </details>
 <details>
-  <summary>Sequential logic optimizations</summary>
+  <summary>Lab Sequential logic optimizations</summary>
+
+  ### LAB 1:
+
+  Here we are going to simulate and synthesize two .v files,'dff_const1.v' and 'dff_const2.v'.<br />
+  
 </details>
 
+<details>
+  <summary>Sequential optimization for unused outputs</summary>
+</details>
 # References
 1. https://yosyshq.net/yosys/
 2. https://en.wikipedia.org/wiki/Icarus_Verilog
