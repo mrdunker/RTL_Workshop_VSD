@@ -702,9 +702,12 @@ This technique is employed to improve performance, reduce critical path delays, 
 
   Here we are performing the synthesis of multiple_modules_opt.v. it is done the same way as before but here we have to flatten the design.<br />
   Relevent Screenshots are attached below.<br />
+  ![r0](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/6aac57c4-eaa9-4766-bfed-1c7c855620d4)
+  ![r1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/79488696-2c93-4336-aeef-b6b058dc03f1)
 
-  
-  
+</details>
+<details>
+  <summary>Sequential logic optimizations</summary>
 </details>
 
 # References
