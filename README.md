@@ -712,16 +712,31 @@ This technique is employed to improve performance, reduce critical path delays, 
   ### LAB 1:
 
   Here we are going to simulate and synthesize two .v files,'dff_const1.v' and 'dff_const2.v'.<br />
+  Below are the .v files of the above-mentioned:<br />
   ![dff1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8e643380-c45f-49fa-a7fb-dd9cea1f4393)
+  <br />
+  The simulations of the same are shown below:<br />
   ![dff2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8cf12e40-2aa6-4c38-94e5-9cfe934e2c54)
+  <br />
+  The optimized synthesized diagram of dff_const1.v is shown below and is as expected.<br />
   ![dff3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a3744ab6-08b6-4fbb-b5c1-1cc61a76f21b)
+  <br />
+  The optimized synthesized diagram of dff_const2.v is shown below.<br />
+  Here as per the simulation, we saw regardless of input and reset the output is always high.<br />
   ![dff4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1b36fbe1-6925-493c-873d-9e35bbd6d36d)
+  <br />
+
+  ### LAB 2:
+
+  Here we are going to simulate and synthesize dff_const3.v .<br />
+  
     
 </details>
 
 <details>
   <summary>Sequential optimization for unused outputs</summary>
 </details>
+
 # References
 1. https://yosyshq.net/yosys/
 2. https://en.wikipedia.org/wiki/Icarus_Verilog
