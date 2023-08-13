@@ -622,16 +622,33 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
   2. Advanced : (State optimization, Retiming, Cloning)
      
  ### Sequential Constant
+ ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8a0d82fa-4735-4273-9562-6bbb62a545d0)
 
  Consider the above figure Fig: A.<br />
  if there is a reset q =0, if there is no reset 'q' is again 0 since it follows 'd' and d=0.<br />
  And so it propagates y=1 always for this case. Effectively we don't have a need for the logic gates in the figure.<br /> 
  <br />
  Now in another case in the figure below:<br />
- 
+ ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/0a0913a2-8c7e-46d7-84a8-a8136f48b97a)
  <br />
  When the set is applied q=1 and when set in not applied q=0.<br />
  It can be explained through the timing diagram Fig: C. q will wait till the next **posedge** of the clock to go down. There will be a slack for q.<br />
+
+ ### State optimization
+
+ State optimization in ASIC design is about finding the best trade-offs among performance, power efficiency, area utilization, and other design objectives
+ to create an effective and efficient custom integrated circuit for a particular application.<br />
+
+ ### Re-timing
+
+It is a technique used to optimize the timing performance of a digital circuit by moving registers (flip-flops) to different locations within the circuit <br />
+without changing its functionality. The primary goal of retiming is to improve the critical path delay, which is the longest path through the logic circuit that determines the maximum operating frequency.<br />
+
+### Sequential logic cloning
+
+Also known as flip-flop cloning or state machine cloning, is a technique used to replicate or duplicate certain portions of sequential logic circuits.
+This technique is employed to improve performance, reduce critical path delays, or optimize power consumption in a design without altering its functional behavior.<br />
+
  
 </details>
 
