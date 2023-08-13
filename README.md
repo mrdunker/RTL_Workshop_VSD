@@ -734,7 +734,11 @@ This technique is employed to improve performance, reduce critical path delays, 
   ![dff3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a5dab47a-cc74-472b-b252-cdf9b60093b5)
 
   ### LAB 3: 
-  
+
+  ![l41](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a8da7d99-7ad6-4674-8d9c-8836579889aa)
+  ![l42](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ab799a5b-4526-4468-a8c0-7c83ed1661da)
+  ![l43](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/80089a11-d320-40ab-b780-ae7a512405be)
+
   ### LAB 4:
 
   
