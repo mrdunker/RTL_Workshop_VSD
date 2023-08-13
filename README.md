@@ -768,11 +768,15 @@ This technique is employed to improve performance, reduce critical path delays, 
   <br />
   <br />
 
-  If we were using count[2] and count[1] also like in the above code:<br />
-
-  
+  ### If we were using count[2] and count[1] also in the above code:<br />
+  ![x1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a0be1de9-9c36-4b67-86f6-4728b66e11b3)
   <br />
   The synthesizer would use **three FF's** as shown below:<br />
+  ![x2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/f9edfbec-e202-484e-8d1b-ebea6d5dca3f)
+  <br />
+  ![x3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a9030b45-457f-4d69-9e15-f230cac3d39f)
+  <br />
+  This optimization is so important as illustrated because it saves a ton of space, and speed, and improves efficiency in general.
 
   
 </details>
