@@ -579,6 +579,7 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
 <summary>Introduction to optimizations</summary>
   <br />
   Here we are going to be looking at logic optimizations.<br />
+  
   There are two kinds of logic optimizations:<br />
   
   1. Combinational Logic optimizations
@@ -603,14 +604,17 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
   
   ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/79f55e71-4505-40e9-8284-53224481bd08)
 <br />
- ### Boolean logic optimizations:
 
- In case of this, the synthesizer uses either KMAPS or Quinse McCluskey methord to find the most optimized logic.<br />
- Let us consider the image below:<br />
- <br />
- Here we are implementing y = a?(b?c:(c?a:0)):(!c).Which is not optimized<br />
- The general output will be y = a'.b' + a.[ b.c + b'.a.c ]. In simplifying this we will get ~( a ^ b ).<br />
- The Synthesis tool does these kinds of optimizations to get the most optimized logic.
+  ### Boolean logic optimizations:
+
+   In case of this, the synthesizer uses either KMAPS or Quinse McCluskey methord to find the most optimized logic.<br />
+   Let us consider the image below:<br />
+   ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/f43837bd-ca89-45df-885d-31d1bd5bf91d)
+   <br /><br />
+   Here we are implementing y = a?(b?c:(c?a:0)):(!c).Which is not optimized<br />
+   The general output will be y = a'.b' + a.[ b.c + b'.a.c ]. In simplifying this we will get ~( a ^ b ).<br />
+   The Synthesis tool does these kinds of optimizations to get the most optimized logic.<br />
+   
 </details>
 
 # References
