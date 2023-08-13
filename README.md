@@ -752,14 +752,28 @@ This technique is employed to improve performance, reduce critical path delays, 
 <details>
   <summary>Sequential optimization for unused outputs</summary>
   <br />
-  This is a very important optimization technique which can be illustrated by the example below:<br />
-  First, we are going to synthesize ' counter_opt.v ' and see the synthesized design diagram.<br />
-
   <br />
+  This is a very important optimization technique which can be illustrated by the example below:<br /><br />
+  First, we are going to synthesize ' counter_opt.v ' and see the synthesized design diagram.<br />
+  
+  ![ct1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/497d7fe1-d70e-46b1-876b-7944a1363651)
+  <br />
+   ![ctx](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/04e0dc24-f48d-4c02-8c2d-36b5575e9214)
+  <br />
+  The two states count[2] and count[1] are **unused**.<br />
+  The synthesizer automatically optimizes the design to make it like the below, only using **one FF instead of three**.<br />
+  ![ct2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a7d3f233-67f2-4d59-9f9d-30abf3a498b9)
+  <br />
+  ![ct3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/28ea9f29-4cf5-46e6-8dc4-b06d8d6c94da)
+  <br />
+  <br />
+
+  If we were using count[2] and count[1] also like in the above code:<br />
+
   
   <br />
-  The two states count[2] and count[1] are unused.<br />
-  The synthesizer automatically optimizes the design to make it like the below, only using 1 D-FF instead of 3.<br />
+  The synthesizer would use **three FF's** as shown below:<br />
+
   
 </details>
 
