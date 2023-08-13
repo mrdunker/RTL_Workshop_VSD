@@ -599,8 +599,18 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
   ### Constant propagation:
 
   Let's consider Fig: A having an output Y. When deriving that circuit using MOS transistors we will need six MOSFETS.<br />
-  if we consider input a = low. The total logic circuit will reduce to Fig: B. And has only a requirement of one inverter i.e 2 MOSFETS.<br /> 
+  if we consider input a = low. The total logic circuit will reduce to Fig: B. And has only a requirement of one inverter i.e 2 MOSFETS.<br />
+  
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/79f55e71-4505-40e9-8284-53224481bd08)
+<br />
+ ### Boolean logic optimizations:
 
+ In case of this, the synthesizer uses either KMAPS or Quinse McCluskey methord to find the most optimized logic.<br />
+ Let us consider the image below:<br />
+ <br />
+ Here we are implementing y = a?(b?c:(c?a:0)):(!c).Which is not optimized<br />
+ The general output will be y = a'.b' + a.[ b.c + b'.a.c ]. In simplifying this we will get ~( a ^ b ).<br />
+ The Synthesis tool does these kinds of optimizations to get the most optimized logic.
 </details>
 
 # References
