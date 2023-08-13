@@ -597,7 +597,7 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
   1. Constant Propagation
   2. Boolean logic optimizations
 
-  ### Constant propagation:
+  ### Constant propagation
 
   Let's consider Fig: A having an output Y. When deriving that circuit using MOS transistors we will need six MOSFETS.<br />
   if we consider input a = low. The total logic circuit will reduce to Fig: B. And has only a requirement of one inverter i.e 2 MOSFETS.<br />
@@ -605,7 +605,7 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
   ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/79f55e71-4505-40e9-8284-53224481bd08)
 <br />
 
-  ### Boolean logic optimizations:
+  ### Boolean logic optimizations
 
    In case of this, the synthesizer uses either KMAPS or Quinse McCluskey methord to find the most optimized logic.<br />
    Let us consider the image below:<br />
@@ -614,7 +614,25 @@ ax9 = {a,0,0,0} + a ----> {a,a}<br />
    Here we are implementing y = a?(b?c:(c?a:0)):(!c).Which is not optimized<br />
    The general output will be y = a'.b' + a.[ b.c + b'.a.c ]. In simplifying this we will get ~( a ^ b ).<br />
    The Synthesis tool does these kinds of optimizations to get the most optimized logic.<br />
-   
+
+## Sequential logic optimizations:
+  There are two types mostly:
+  
+  1. Basic : (Sequential constant)
+  2. Advanced : (State optimization, Retiming, Cloning)
+     
+ ### Sequential Constant
+
+ Consider the above figure Fig: A.<br />
+ if there is a reset q =0, if there is no reset 'q' is again 0 since it follows 'd' and d=0.<br />
+ And so it propagates y=1 always for this case. Effectively we don't have a need for the logic gates in the figure.<br /> 
+ <br />
+ Now in another case in the figure below:<br />
+ 
+ <br />
+ When the set is applied q=1 and when set in not applied q=0.<br />
+ It can be explained through the timing diagram Fig: C. q will wait till the next **posedge** of the clock to go down. There will be a slack for q.<br />
+ 
 </details>
 
 # References
