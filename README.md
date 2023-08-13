@@ -663,6 +663,38 @@ This technique is employed to improve performance, reduce critical path delays, 
   <br />
   
   ### LAB 1:  
+  
+  ![x0](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/66b55f2f-84db-4585-9092-fef98a2ba084)
+  <br />
+  In the above code, if we look at it. It is effectively a 2x1 mux which can be simplified to a 2 input and gate.<br />
+  So, by doing the opt_clean -purge command we can purge unnecessary cells to make it optimized.<br />
+  ![x1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/9c697ebe-6d6c-4a0b-af66-d8dd6a7d642f)
+  <br />
+  The Schematic diagram is shown below and as expected we have a 2 input and gate.<br />
+  ![x2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/4304212b-e48e-4f64-81f7-cb648caeea5f)
+
+  ### LAB 2:
+  
+  Here we are performing the synthesis of opt_check2.v. it is done the same way as **LAB 1** <br />
+  We get an optimized design of a 2 input or gate.<br />
+  Relevent Screenshots are attached below.<br />
+
+  ### LAB 3:
+  
+  Here we are performing the synthesis of opt_check3.v. it is done the same way as the above labs <br />
+  Relevent Screenshots are attached below.<br />
+
+
+  ### LAB 4:
+    
+  Here we are performing the synthesis of opt_check4.v. it is done the same way as the above labs <br />
+  Relevent Screenshots are attached below.<br />
+
+
+  ### LAB 5:
+
+  Here we are performing the synthesis of multiple_modules_opt.v. it is done the same way as before but here we have to flatten the design.<br />
+  Relevent Screenshots are attached below.<br />
 
   
   
