@@ -751,6 +751,16 @@ This technique is employed to improve performance, reduce critical path delays, 
 
 <details>
   <summary>Sequential optimization for unused outputs</summary>
+  <br />
+  This is a very important optimization technique which can be illustrated by the example below:<br />
+  First, we are going to synthesize ' counter_opt.v ' and see the synthesized design diagram.<br />
+
+  <br />
+  
+  <br />
+  The two states count[2] and count[1] are unused.<br />
+  The synthesizer automatically optimizes the design to make it like the below, only using 1 D-FF instead of 3.<br />
+  
 </details>
 
 # References
