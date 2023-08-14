@@ -922,7 +922,8 @@ Due to all these issues, it is very paramount to check for synthesis & simulatio
 <details>
   <summary>Lab GLS & mismatch</summary>
   
-  <br/>
+  ### LAB 1
+  
   The below-given file is the .v file that we have to simulate and synthesize:<br />
   ![t1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/0cc82ee6-0333-420f-8d56-a9409bc77bfe)
   <br />
@@ -939,6 +940,7 @@ Due to all these issues, it is very paramount to check for synthesis & simulatio
   We will get the following waveform in the GTKwave which matches our previous waveform.<br />
   ![t5](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/29db9b6d-99fc-43f5-aec7-db04b0e1516d)
   <br />
+  
   
 </details>
 
