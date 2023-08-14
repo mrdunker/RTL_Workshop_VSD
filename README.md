@@ -1094,6 +1094,14 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
 </details>
 
+<details>
+  <summary>Lab Incomplete If case</summary>
+</details>
+
+<details>
+  <summary>Lab Incomplete Overlap case</summary>
+</details>
+
 
 # References
 1. https://yosyshq.net/yosys/
