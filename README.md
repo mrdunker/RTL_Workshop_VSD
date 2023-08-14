@@ -977,6 +977,123 @@ Due to all these issues, it is very paramount to check for synthesis & simulatio
 
 </details>
 
+# Day 5
+
+<details>
+  <summary>If case constructs </summary>
+  <br />
+  <br />
+  Here we are going to discuss If else statements, case statements and the effect of them.<br />
+  if statements are going to be of the below syntax.<br />
+
+  ```
+  if <condition 1>
+    statements
+  else if <condition 1>
+    statements
+  else
+    statements
+  ```
+ 
+ The equivalent logic diagram is:<br />
+ ![Screenshot from 2023-08-14 21-36-51](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ce708333-4177-42a2-9af6-ee21ed1561fb)
+ <br />
+
+ There is an issue with if statements:<br />
+ 
+ - It can cause inferred latches.
+ - Inferred latches are caused because of unknown cases. eg: if we forget to put the else condition.
+ - We can say Inferred latches are due to bad coding styles.
+
+ ![Screenshot from 2023-08-14 21-45-48](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1b66f734-7568-4753-b9a6-b50ed2dfab19)
+ <br />
+
+ ### Exceptional cases
+
+ There are some exceptional cases to the above-mentioned.<br />
+ for example, In the case of counters, we can avoid the use of the else condition.<br />
+ Let us consider the code below for a counter.<br />
+
+ ```
+ always @(posedge clk, posedge reset)
+ begin
+  if (reset)
+    count <=3'b000;
+ else if(en)
+    count <=count + 1;
+ end
+ 
+ ```
+ The above code will result in a latch which we will need for the counter to function properly.<br />
+ if no enable is set the count should latch to the previous value.<br />
+ ![Screenshot from 2023-08-14 21-57-37](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/14aab491-154d-4ef8-9212-7f1dc2b0957d)
+ <br />
+
+ **Note 1: Combinational circuits should not have inferred latches** <br />
+ <br />
+ **Note 2: If statements and case statements should always be used in an always block**<br />
+ <br />
+ It is recommended to use reg type for the assigned variables.<br />
+
+ ```
+  reg y;
+  always @(*)
+  begin
+    case(sel)
+      2'b00: y = <some value 1>;
+      2'b01: y = <some value 2>;
+    endcase
+  end
+ ```
+ ### Caveats with case:
+
+ It should be known that incomplete cases would result in inferred latches. Such us the above code above.<br />
+ To avoid this we must use default statements at the end of the case.<br />
+
+ ```
+  reg [1:0] sel;
+  always @(*)
+  begin
+    case(sel)
+      2'b00:<some code>;
+      2'b01:<some code>;
+      default:<some code>;
+    endcase
+   end
+ ```
+
+ It should also be noted that we need to assign all outputs in all the cases.<br />
+ If not, like in the below code where partial assignments are made some issues might come in the design.<br />
+ 
+ ```
+ reg [1:0] sel;
+ always @(*)
+  begin
+    case(sel)
+      2'b00: begin
+              x=a;
+              y=b;
+             end
+      2'b01: begin
+              x=c;
+             end 
+      default: begin
+                x=d;
+                y=b;
+              end
+    endcase
+   end
+ ```
+
+![Screenshot from 2023-08-14 22-20-39](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1ba6168c-02ad-485a-8c24-76937e13d6ab)
+<br />
+To resolve the above issue assign all the outputs in all the cases and do no partial assignments.<br />
+<br />
+**Note: It is important to not have overlapping case statements**<br />
+
+
+</details>
+
 
 # References
 1. https://yosyshq.net/yosys/
