@@ -919,6 +919,29 @@ Due to all these issues, it is very paramount to check for synthesis & simulatio
 
 </details>
 
+<details>
+  <summary>Lab GLS & mismatch</summary>
+  
+  <br/>
+  The below-given file is the .v file that we have to simulate and synthesize:<br />
+  ![t1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/0cc82ee6-0333-420f-8d56-a9409bc77bfe)
+  <br />
+  First, we are going to simulate the file with iverilog and GTKwave using the testbench.<br />
+  ![t2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ddb56453-993d-42b3-a92b-e9168fcf4ac8)
+  <br />
+  Then we are going to synthesize and create a netlist file for the same.<br />
+  ![t3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/24f5a9b4-8e3e-4e02-86c5-212d80121de3)
+  <br />
+  Then we are going to simulate it again with the newly created netlist file, the Verilog models, and the testbench using iverilog and GTKwave.
+  <br />
+  ![t4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/9a3f4be1-e597-4fb8-b11d-e85f7a04e8e1)
+  <br />
+  We will get the following waveform in the GTKwave which matches our previous waveform.<br />
+  ![t5](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/29db9b6d-99fc-43f5-aec7-db04b0e1516d)
+  <br />
+  
+</details>
+
 
 # References
 1. https://yosyshq.net/yosys/
