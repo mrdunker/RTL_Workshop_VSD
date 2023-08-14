@@ -1096,10 +1096,46 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
 <details>
   <summary>Lab Incomplete If case</summary>
+  
+  ### LAB 1
+
+  Below is the .v  file that we are going to simulate. We are expecting a mux ideally with the use of if statements.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/b56fe6d1-3a5b-4234-aa01-009a183b69b2)
+  <br />
+  In the below waveform, you can see that the design becomes a DFF and the y follows i1 for the i0 as enable.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/59e3644d-6f7d-4ebb-ab7e-27bd59391f1f)
+  <br />
+  During synthesis, we can see that DFF is generated instead of a mux.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1503570d-55e0-4293-a874-3c7ca72eabfe)
+  <br />
+  The below figure shows the design synthesis diagram.<br />
+  ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/5c8dfeaa-cf28-4526-9a56-29b9aaefb1eb)
+  <br />
+  <br />
+
+  ### LAB 2
+  
+  Below is the .v  file that we are going to simulate. We are expecting two muxes ideally but like above what we get is quite different.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/5652a70d-f996-43eb-b45f-55816ceb04a2)
+  <br />
+  Below is the waveform of the same.<br />
+  You can see that y(output) follows i1 when i0 is high.<br />
+  if i0 is low and i2 is high, y follows i3.<br />
+  for the rest a DFF is inferred as shown in the waveform:<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1d7489ad-d8b9-4733-94ad-cdabfc5316b2)
+  <br />
+  The above statement of the inferred FF is confirmed with the below screenshot.<br/>
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/4797f2ed-1807-4946-95e0-881150d58c5e)
+  <br />
+  Below is the synthesized design.<br />
+  ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/5ce3f1fb-d68a-49f9-911c-14a15b735e7b)
+  <br />
+  
 </details>
 
 <details>
   <summary>Lab Incomplete Overlap case</summary>
+
 </details>
 
 
