@@ -955,8 +955,26 @@ Due to all these issues, it is very paramount to check for synthesis & simulatio
   ![bm3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/e8dfca35-4c4a-4db1-b921-8371eb6d84c3)
   <br />
 
+</details>
 
-  ### LAB 3
+<details>
+  <summary>Labs Blocking and Non-Blocking</summary>
+
+  ### LAB 1
+
+  We are going to see the Synthesis-Simulation mismatch caused by **blocking statement**.<br />
+  The below-given file is the .v file that we have to simulate and synthesize:<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/6b7d94cf-7a1b-424f-91f5-917ea0104d91)
+  <br />
+  We will get a waveform like this which is not matching the design **d = ((a|b)&c)**.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/64e334d3-1a21-4229-ac1c-f107c0ed1136)
+  <br />
+  On synthesizing it, we will get the required design diagram. A netlist is also created for the same.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/b5afb83b-99f5-4276-94ac-b675358843cd)
+  <br />
+  We will see a stark difference in the pre and post-synthesis waveforms. This is the Synthesis-Simulation mismatch caused by **blocking statement**.<br />
+  ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/76580932-811c-4bc4-94d2-e403f2bfa3af)
+
 </details>
 
 
