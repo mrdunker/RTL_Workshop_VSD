@@ -941,7 +941,22 @@ Due to all these issues, it is very paramount to check for synthesis & simulatio
   ![t5](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/29db9b6d-99fc-43f5-aec7-db04b0e1516d)
   <br />
   
-  
+  ### LAB 2
+
+  The below-given file is the .v file that we have to simulate and synthesize:<br />
+  ![bm0](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/01bce409-7839-41b5-9aeb-3683dc541288)
+  <br />
+  We will get a waveform like this which is not matching a 2x1 mux waveform(it is seen as incorrect):<br />
+  ![bm1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/b4345419-94da-4e24-aeb0-84e5a538de05)
+  <br />
+  On synthesizing it, it is seen as a normal mux. We create a netlist for it also.<br />
+  ![bm2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/72cf06dd-2d0f-42ed-bb51-b59c72a53cc0)
+  We will see a stark difference in the pre and post-synthesis waveforms. This is the Synthesis-Simulation mismatch.<br />
+  ![bm3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/e8dfca35-4c4a-4db1-b921-8371eb6d84c3)
+  <br />
+
+
+  ### LAB 3
 </details>
 
 
