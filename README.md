@@ -781,6 +781,145 @@ This technique is employed to improve performance, reduce critical path delays, 
   
 </details>
 
+# Day 4
+
+<details>
+  <summary>Gate Level Simulations (GLS) and Synthesis level mismatch</summary>
+  <br />
+  
+  ### What is GLS?
+
+  It is basically running the testbench with netlist as Design under Test (DUT).<br />
+  Netlist is logically the same as that of RTL code so the same testbench will fit.<br />
+  <br />
+
+  Why do we use GLS?<br />
+  1. To verify logical correctness after synthesis
+  2. To ensure the timing of the design is met: for this, GLS needs to be run with delay annotation.
+
+  GLS using verilog is as illustrated in the picture below:<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/7780810d-1928-44ad-91ce-9f140f877c7a)
+  <br />
+  If gate-level models are delay annotated then we can use GLS for timing validation.<br />
+  <br />
+
+  ### Synthesis Simulation mismatch
+
+Synthesis simulation mismatch refers to a discrepancy or misalignment between the expected behavior of a system or device, as predicted by a simulation or modeling process, and the actual behavior 
+observed in the physical implementation or real-world operation of that system or device. This term is often used in fields such as electronics, engineering, and computer science, where 
+simulations are employed to model the behavior of complex systems before they are physically constructed or deployed.<br />
+
+Synthesis simulation mismatch can lead to unexpected problems, performance degradation, or failure of the designed system. Engineers and designers often work to minimize these mismatches by 
+refining simulation models, improving manufacturing processes, and conducting thorough testing and validation of designs.<br />
+
+There are mainly three ways mismatches occur:<br />
+1. Missing sensitivity list
+2. Blocking vs Non-Blocking assignments
+3. nonstandard verilog codes
+
+### Missing sensitivity list
+
+Let us remember that a simulator checks for changes in activity, and look at the code shown below.<br />
+
+```
+always @(sel)
+begin
+if (sel)
+ out = i1;
+else
+ out = i0;
+end
+
+```
+In the above code the always block only checks for 'sel' changes hence we don't get the exact required output.<br />
+To resolve this we should use:<br />
+
+```
+always @(*)
+```
+Here the always block will get evaluated for any signal change. Hence, we will get the expected output.<br />
+
+### Blocking & Non-Blocking assignments
+
+Assignments happen inside the always block.<br />
+
+Blocking:<br />
+- The '=' sign is used to represent blocking assignments
+- It executes the statements in the order it is written.
+  
+Non-Blocking:<br />
+- The '<=' sign is used to represent non-blocking.
+- This executes all the RHS when always block is executed and assigned to LHS.
+- Parallel evaluation is being occurred here.
+
+### Caveats with blocking
+
+Let's consider the below codes:<br />
+
+```
+code 1:
+if (reset)
+  begin
+    q0=1'b0;
+    q =1'b0;
+  end
+else
+  begin
+    q=q0;
+    q0=d;
+  end
+
+code 2:
+if (reset)
+  begin
+    q0=1'b0;
+    q =1'b0;
+  end
+else
+  begin
+    q0=d;
+    q=q0;
+  end
+```
+
+Here you can see there is not much difference between code1 and code2 except we are interchanging the positions of assignments in the else condition of code2.<br />
+we will get a drastic mismatch because of this as illustrated by the figure below.<br />
+
+![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/208bf03e-bd09-49cb-a578-7bd0133a8a89)
+<br />
+The mismatch is very much evident here and for this reason, we must use non-blocking codes. Which will give no mismatch.<br />
+The keynote is we always use non-blocking for writing sequential circuits.<br />
+<br />
+
+Let us consider another example, a combinational circuit this time.<br />
+
+```
+code 1:
+always @(*)
+begin
+  y  =  q0 & c;
+  q0 =  a  | b;
+end
+
+code 2:
+always @(*)
+begin
+  q0 =  a  | b;
+  y  =  q0 & c;
+end
+
+```
+
+For code 1: The **old** q0 value is used in the second statement.<br />
+For code 2: The **new** q0 value is used in the second statement.<br />
+<br />
+The funny thing here is that both the circuits after simulation will be the same but the synthesized circuits will be different.<br />
+<br />
+Due to all these issues, it is very paramount to check for synthesis & simulation mismatches. So for that, we use **GLS**
+
+</details>
+
+
 # References
 1. https://yosyshq.net/yosys/
 2. https://en.wikipedia.org/wiki/Icarus_Verilog
