@@ -11,7 +11,7 @@ This GitHub repository summarises the class work done on Physical Design for ASI
 
 [Day 4 : Introduction to GLS ,blocking vs. non-blocking,Synthesis-Simulation mismatch](#day-4)
 
-[Day 5 : Overview of If,case,for loops and generate for loops](#day-5)
+[Day 5 : Overview of If,case,for loops and for generate loops](#day-5)
 
 # Day 0
 Following are the steps for the installation of necessary tools:
