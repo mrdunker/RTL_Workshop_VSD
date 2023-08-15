@@ -1161,7 +1161,17 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/f6ffc923-9d85-4fb2-aaf4-507046659323)
   <br />
 
-  
+  ### LAB 3
+
+  Here we are going to simulate and synthesize ' partial_case_assign.v '.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/b1ba1ff6-c40c-4324-954d-22b2fdcf83fc)
+  <br />
+  The figure below shows the simulation of the RTL. Due to the partial assignments in different cases, latches will be inferred.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cbb65fa5-bc31-45f1-ac4f-c93a44b709c9)
+  The synthesized design diagram is shown below.As expected there is a D latch because of partial assignments.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/51694a7a-66e5-4130-b984-f88049100b1c)
+  <br />
+
 
 
 </details>
