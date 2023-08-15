@@ -1278,7 +1278,17 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   <br />
 
   ### LAB 3
-  
+
+  Here shown below are the RTL codes for a ripple carry adder.<br />
+  We are using **generate for loop** to replicate the full adder hardware.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/c483f7c0-2408-4ef4-bac2-57e35d35a2ed)
+  <br />
+  Below given is the simulation of fa.v and rca.v.It is obtained as expected.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/09774bf7-b628-4971-9e8b-7e5bc62fcdcd)
+  Below 
+  ![3a](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1a5bac6a-9f9b-4e21-ba71-ac2c8d05534b)
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8f4fc7d8-cabe-43cd-af08-6cfe4ec42aa9)
+
   
 </details>
 
