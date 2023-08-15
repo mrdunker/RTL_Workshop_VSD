@@ -1105,7 +1105,7 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   In the below waveform, you can see that the design becomes a DFF and the y follows i1 for the i0 as enable.<br />
   ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/59e3644d-6f7d-4ebb-ab7e-27bd59391f1f)
   <br />
-  During synthesis, we can see that DFF is generated instead of a mux.<br />
+  During synthesis, we can see that a D latch is generated instead of a mux.<br />
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1503570d-55e0-4293-a874-3c7ca72eabfe)
   <br />
   The below figure shows the design synthesis diagram.<br />
@@ -1124,7 +1124,7 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   for the rest a DFF is inferred as shown in the waveform:<br />
   ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1d7489ad-d8b9-4733-94ad-cdabfc5316b2)
   <br />
-  The above statement of the inferred FF is confirmed with the below screenshot.<br/>
+  The above statement of the inferred D latch is confirmed with the below screenshot.<br/>
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/4797f2ed-1807-4946-95e0-881150d58c5e)
   <br />
   Below is the synthesized design.<br />
@@ -1135,6 +1135,34 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
 <details>
   <summary>Lab Incomplete Overlap case</summary>
+
+  ### LAB 1
+
+  Below is the .v  file that we are going to simulate. We are expecting a mux ideally but what we get is quite different.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/d6a5e5a0-28f0-47bd-bccb-d2377462274f)
+  <br />
+  Below is the waveform of the incomp_case.v RTL.<br />
+  Here the output follows the logic for a mux for select lines 00 and 01 but the case for 10 and 11 are not defined so an inferred D latch will be formed.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/e04e524a-7bfe-47d5-a6ed-335c01607150)
+  <br />
+  The below diagram shows the synthesized diagram and like we thought a D latch is there.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/c4e71730-180a-4318-9368-41b4f3cb3161)
+  <br />
+
+  ### LAB 2
+
+  Here were are going to simulate and synthesize a code that fixes the above-said problem.<br /> 
+  Here there will not be a latch inferred as we are using **default**.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/319e81eb-d1ba-4d37-b208-8a7be5a1f6a7)
+  Below is the simulation of the RTL. In contrast to the previous waveform, this is correct.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/0713f46f-584c-4aed-bb4d-f99fa950c9ef)
+  <br />
+  As shown below, there is no D Latch inferred.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/f6ffc923-9d85-4fb2-aaf4-507046659323)
+  <br />
+
+  
+
 
 </details>
 
