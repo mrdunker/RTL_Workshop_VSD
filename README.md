@@ -1191,7 +1191,56 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
 <details>
   <summary>For loop and For generate</summary>
+  <br />
+  <br />
+  In this section, we are going to be looking at the for loop and generate for looping statements.<br />
+  Looping constructs are two types:<br />
+  
+  - For loop
+  - generate for loop
+
+  ### For loop
+
+  The **for loop** is used to evaluate expressions.<br />
+  It should always be used inside the **always** block.<br />
+  It is not and should not be used for generating or instantiating hardware.<br />
+  <br />
+  example:
+
+  ```
+  input reg [31:0] inp;
+  integer i;
+  always @(*)
+  begin
+    for (i=0;i<32;i=i+1)
+    begin
+      if(i == sel)
+        y = inp[i];
+    end
+  end 
+
+  ```
+
+  ### Generate for loop
+
+  The **generate for loop** is used for replicating the hardware.<br />
+  It should be used outside the always block.<br />
+  <br />
+  example:
+
+  ```
+  genvar i;
+  generate
+    for(i=0;i<3;i=i+1)
+      begin
+        and u1 (.a(a[i]) , .b(b[i]) , .y(y[i]));
+      end
+  endgenerate
+  ```
+  
+  
 </details>
+
 
 
 <details>
