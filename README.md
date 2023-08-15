@@ -1,6 +1,18 @@
 # iiitb_emil_class
 This GitHub repository summarises the class work done on Physical Design for ASICs (VL508)
 
+[Day 0](#day-0)
+
+[Day 1](#day-1)
+
+[Day 2](#day-2)
+
+[Day 3](#day-3)
+
+[Day 4](#day-4)
+
+[Day 5](#day-5)
+
 # Day 0
 Following are the steps for the installation of necessary tools:
 <details>
@@ -1305,6 +1317,18 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
 </details>
 
+# Acknowledgement
+
+- Kunal Ghosh,Director, **VSD Corp.Pvt Ltd**.
+- Skywater Foundry
+- Chat-GPT (OpenAi)
+- Kanish R,Colleague, **IIIT-B**
+- Alwin Shaju,Colleague, **IIIT-B**
+- Madhav Rao, Professor, **IIIT-B**
+- Nanditha Rao, Professor, **IIIT-B**
+- Manikandan RR, Professor, **IIIT-B**
+- Mariam Rakka
+
 # References
 1. https://yosyshq.net/yosys/
 2. https://en.wikipedia.org/wiki/Icarus_Verilog
@@ -1314,4 +1338,5 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 6. http://opencircuitdesign.com/magic/
 7. https://github.com/The-OpenROAD-Project/OpenLane
 8. https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
+9. https://github.com/mariamrakka/vsd-hdp.git
 
