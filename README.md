@@ -1247,7 +1247,7 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
   ### LAB 1
 
-  Below is the RTL code for mux_generate.<br />
+  Below is the RTL code for mux_generate.v.<br />
   It is a 4x1 mux using for loop in the logic.<br />
   ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cb7dc93f-7d39-4d3e-9621-48a4851e25de)
   <br />
@@ -1259,7 +1259,25 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   <br />
   We generate a netlist for the same and simulate it. As expected we get the output as the previous waveform.<br />
   ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/98cb07c3-3436-45f9-a369-fef813a51b32)
+  <br />
 
+  ### LAB 2
+
+  Below is the RTL code for demux_generate.v.<br />
+  It is a 1x8 demultiplexer using **for loop** in the logic.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/ff179083-c6de-4945-980a-7abcc21ee4b0)
+  <br />
+  The simulated output waveform is shown below and it coming out as expected.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1e863df3-1fce-4b38-8970-226e66d6ccb1)
+  <br />
+  After synthesis, we get the design layout as such.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/af8a9601-ed0a-485c-bc61-3bd732a81436)
+  <br />
+  We generate a netlist for the same and simulate it. As expected we get the output as the previous waveform.<br />
+  ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/5dcd2348-1753-4264-82f6-9f6d7cfc1464)
+  <br />
+
+  ### LAB 3
   
   
 </details>
