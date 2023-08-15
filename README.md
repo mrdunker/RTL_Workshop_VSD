@@ -1241,10 +1241,27 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   
 </details>
 
-
-
 <details>
   <summary>Labs "For loop" and "For generate"</summary>
+  <br />
+
+  ### LAB 1
+
+  Below is the RTL code for mux_generate.<br />
+  It is a 4x1 mux using for loop in the logic.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cb7dc93f-7d39-4d3e-9621-48a4851e25de)
+  <br />
+  The simulated output waveform is shown below and it coming out as expected.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/60563471-a8db-4f68-8bce-b945cb1af9ea) 
+  <br />
+  After synthesis, we get the design layout as such.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/43ed9af8-d2ab-4917-bcad-56166b8eb8e2)
+  <br />
+  We generate a netlist for the same and simulate it. As expected we get the output as the previous waveform.<br />
+  ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/98cb07c3-3436-45f9-a369-fef813a51b32)
+
+  
+  
 </details>
 
 # References
