@@ -1285,7 +1285,16 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   <br />
   Below given is the simulation of fa.v and rca.v.It is obtained as expected.<br />
   ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/09774bf7-b628-4971-9e8b-7e5bc62fcdcd)
-  Below 
+  Below is the synthesized design diagram for the same.<br />
+  The yosys commands are a bit different for this, as we are using two .v files.<br />
+
+  ```
+  read_liberty -lib <dir>  // same as before
+  read_verilog fa.v rca.v  // since there are two .v files
+  synth                    // just write synth without anything else
+  abc -lib <directory>     // same as usual
+  show rca                 // instead of just show (you can write <show fa> to see fa layout)
+  ```
   ![3a](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1a5bac6a-9f9b-4e21-ba71-ac2c8d05534b)
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8f4fc7d8-cabe-43cd-af08-6cfe4ec42aa9)
 
