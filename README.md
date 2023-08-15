@@ -1189,6 +1189,14 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
 </details>
 
+<details>
+  <summary>For loop and For generate</summary>
+</details>
+
+
+<details>
+  <summary>Labs "For loop" and "For generate"</summary>
+</details>
 
 # References
 1. https://yosyshq.net/yosys/
