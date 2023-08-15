@@ -1298,9 +1298,11 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 
   ```
   ![3a](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1a5bac6a-9f9b-4e21-ba71-ac2c8d05534b)
+  <br />
+  Simulate the netlist file along with the Verilog models and testbench.<br />
+  We find the output waveform to be same as the RTL simulation.<br />
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8f4fc7d8-cabe-43cd-af08-6cfe4ec42aa9)
 
-  
 </details>
 
 # References
