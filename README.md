@@ -5,13 +5,13 @@ This GitHub repository summarises the class work done on Physical Design for ASI
 
 [Day 1 : Introduction to Verilog RTL design and Synthesis](#day-1)
 
-[Day 2 : Inrtoduction to timing libs , Efficent flop coding styles, Heirarchical vs. Flat](#day-2)
+[Day 2 : Introduction to timing libs, Efficient flop coding styles, Hierarchical vs. Flat](#day-2)
 
 [Day 3 : Combinational and Sequential optimizations](#day-3)
 
-[Day 4 : Introduction to GLS ,blocking vs. non-blocking,Synthesis-Simulation mismatch](#day-4)
+[Day 4 : Introduction to GLS, blocking vs. non-blocking, Synthesis-Simulation mismatch](#day-4)
 
-[Day 5 : Overview of If,case,for loops and for generate loops](#day-5)
+[Day 5 : Overview of If, case,for loops, and for generating loops](#day-5)
 
 # Day 0
 Following are the steps for the installation of necessary tools:
@@ -1305,14 +1305,14 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   read_verilog fa.v rca.v  // since there are two .v files
   synth                    // just write synth without anything else
   abc -lib <directory>     // same as usual
-  show rca                 // instead of just show (you can write <show fa> to see fa layout)
+  show rca                 // instead of just show (you can write <show fa> to see the fa layout)
   write_verilog rca_net.v  // same as usual
 
   ```
   ![3a](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/1a5bac6a-9f9b-4e21-ba71-ac2c8d05534b)
   <br />
   Simulate the netlist file along with the Verilog models and testbench.<br />
-  We find the output waveform to be same as the RTL simulation.<br />
+  We find the output waveform to be the same as the RTL simulation.<br />
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/8f4fc7d8-cabe-43cd-af08-6cfe4ec42aa9)
 
 </details>
@@ -1322,8 +1322,8 @@ To resolve the above issue assign all the outputs in all the cases and do no par
 - Kunal Ghosh,Director, **VSD Corp.Pvt Ltd**.
 - Skywater Foundry
 - Chat-GPT (OpenAi)
-- Kanish R,Colleague, **IIIT-B**
-- Alwin Shaju,Colleague, **IIIT-B**
+- Kanish R, Colleague, **IIIT-B**
+- Alwin Shaju, Colleague, **IIIT-B**
 - Madhav Rao, Professor, **IIIT-B**
 - Nanditha Rao, Professor, **IIIT-B**
 - Manikandan RR, Professor, **IIIT-B**
