@@ -1152,7 +1152,7 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   ### LAB 2
 
   Here were are going to simulate and synthesize a code that fixes the above-said problem.<br /> 
-  Here there will not be a latch inferred as we are using **default**.<br />
+  Here, a latch will not be inferred as we are using **default**.<br />
   ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/319e81eb-d1ba-4d37-b208-8a7be5a1f6a7)
   Below is the simulation of the RTL. In contrast to the previous waveform, this is correct.<br />
   ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/0713f46f-584c-4aed-bb4d-f99fa950c9ef)
@@ -1168,11 +1168,24 @@ To resolve the above issue assign all the outputs in all the cases and do no par
   <br />
   The figure below shows the simulation of the RTL. Due to the partial assignments in different cases, latches will be inferred.<br />
   ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/cbb65fa5-bc31-45f1-ac4f-c93a44b709c9)
-  The synthesized design diagram is shown below.As expected there is a D latch because of partial assignments.<br />
+  The synthesized design diagram is shown below. As expected there is a D latch because of partial assignments.<br />
   ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/51694a7a-66e5-4130-b984-f88049100b1c)
   <br />
 
+  ### LAB 4
 
+  In this particular lab, we are going to see ' bad_case.v ', which will have a synthesis simulation mismatch.<br />
+  In the code below the simulator will get confused for sel '10' and '11' and will cause a latch-like action.<br />
+  ![1](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/702cf0a9-cc5a-4899-a629-0f4ba2912811)
+  <br />
+  Below is the simulation on GTKWave.<br />
+  ![2](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/efd3889a-6b82-445f-a568-3fd935e32bef)
+  <br />
+  After synthesis, we will get this design diagram which has no D-latch, so to investigate we simulate the netlist.<br />
+  ![3](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/43990a3b-fb94-48b6-bac7-ff4bffa527ac)
+  <br />
+  After the simulation of the netlist, we will get the following waveform which is correct. Hence a synthesis-simulation mismatch.<br />
+  ![4](https://github.com/mrdunker/iiitb_emil_class/assets/38190245/a7320bcc-00fd-4ceb-a669-0a6e132a94ad)
 
 </details>
 
