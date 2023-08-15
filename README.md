@@ -1,17 +1,17 @@
 # iiitb_emil_class
 This GitHub repository summarises the class work done on Physical Design for ASICs (VL508)
 
-[Day 0](#day-0)
+[Day 0 : Open Source Labs installation](#day-0)
 
-[Day 1](#day-1)
+[Day 1 : Introduction to Verilog RTL design and Synthesis](#day-1)
 
-[Day 2](#day-2)
+[Day 2 : Inrtoduction to timing libs , Efficent flop coding styles, Heirarchical vs. Flat](#day-2)
 
-[Day 3](#day-3)
+[Day 3 : Combinational and Sequential optimizations](#day-3)
 
-[Day 4](#day-4)
+[Day 4 : Introduction to GLS ,blocking vs. non-blocking,Synthesis-Simulation mismatch](#day-4)
 
-[Day 5](#day-5)
+[Day 5 : Overview of If,case,for loops and generate for loops](#day-5)
 
 # Day 0
 Following are the steps for the installation of necessary tools:
