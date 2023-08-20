@@ -1,4 +1,4 @@
-# iiitb_emil_class
+# RTL Workshop
 This GitHub repository summarises the class work done on Physical Design for ASICs (VL508)
 
 [Day 0 : Open Source Labs installation](#day-0)
